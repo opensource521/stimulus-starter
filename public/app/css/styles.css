@@ -1,0 +1,3003 @@
+/*!
+ * CERVE PROPRIETARY INFORMATION
+ *
+ * This software is confidential. Cerve, or one of its
+ * subsidiaries, has supplied this software to you under terms of a
+ * license agreement, nondisclosure agreement or both.
+ *
+ * You may not copy, disclose, or use this software except in accordance with
+ * those terms.
+ *
+ * Copyright (c) 2021 Cerve
+ * ALL RIGHTS RESERVED.
+ *
+ * CERVE MAKES NO REPRESENTATIONS OR
+ * WARRANTIES ABOUT THE SUITABILITY OF THE SOFTWARE,
+ * EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+ * TO THE IMPLIED WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE, OR
+ * NON-INFRINGEMENT. CERVE SHALL NOT BE
+ * LIABLE FOR ANY DAMAGES SUFFERED BY LICENSEE
+ * AS A RESULT OF USING, MODIFYING OR DISTRIBUTING
+ * THIS SOFTWARE OR ITS DERIVATIVES.
+ */
+/*!
+ * CERVE PROPRIETARY INFORMATION
+ *
+ * This software is confidential. Cerve, or one of its
+ * subsidiaries, has supplied this software to you under terms of a
+ * license agreement, nondisclosure agreement or both.
+ *
+ * You may not copy, disclose, or use this software except in accordance with
+ * those terms.
+ *
+ * Copyright (c) 2021 Cerve
+ * ALL RIGHTS RESERVED.
+ *
+ * CERVE MAKES NO REPRESENTATIONS OR
+ * WARRANTIES ABOUT THE SUITABILITY OF THE SOFTWARE,
+ * EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+ * TO THE IMPLIED WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE, OR
+ * NON-INFRINGEMENT. CERVE SHALL NOT BE
+ * LIABLE FOR ANY DAMAGES SUFFERED BY LICENSEE
+ * AS A RESULT OF USING, MODIFYING OR DISTRIBUTING
+ * THIS SOFTWARE OR ITS DERIVATIVES.
+ */
+/*!
+ * CERVE PROPRIETARY INFORMATION
+ *
+ * This software is confidential. Cerve, or one of its
+ * subsidiaries, has supplied this software to you under terms of a
+ * license agreement, nondisclosure agreement or both.
+ *
+ * You may not copy, disclose, or use this software except in accordance with
+ * those terms.
+ *
+ * Copyright (c) 2021 Cerve
+ * ALL RIGHTS RESERVED.
+ *
+ * CERVE MAKES NO REPRESENTATIONS OR
+ * WARRANTIES ABOUT THE SUITABILITY OF THE SOFTWARE,
+ * EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+ * TO THE IMPLIED WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE, OR
+ * NON-INFRINGEMENT. CERVE SHALL NOT BE
+ * LIABLE FOR ANY DAMAGES SUFFERED BY LICENSEE
+ * AS A RESULT OF USING, MODIFYING OR DISTRIBUTING
+ * THIS SOFTWARE OR ITS DERIVATIVES.
+ */
+/* easeInOutQuart */
+/* easeOutQuart */
+/* easeInCubic */
+/*!
+ * CERVE PROPRIETARY INFORMATION
+ *
+ * This software is confidential. Cerve, or one of its
+ * subsidiaries, has supplied this software to you under terms of a
+ * license agreement, nondisclosure agreement or both.
+ *
+ * You may not copy, disclose, or use this software except in accordance with
+ * those terms.
+ *
+ * Copyright (c) 2021 Cerve
+ * ALL RIGHTS RESERVED.
+ *
+ * CERVE MAKES NO REPRESENTATIONS OR
+ * WARRANTIES ABOUT THE SUITABILITY OF THE SOFTWARE,
+ * EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+ * TO THE IMPLIED WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE, OR
+ * NON-INFRINGEMENT. CERVE SHALL NOT BE
+ * LIABLE FOR ANY DAMAGES SUFFERED BY LICENSEE
+ * AS A RESULT OF USING, MODIFYING OR DISTRIBUTING
+ * THIS SOFTWARE OR ITS DERIVATIVES.
+ */
+.icon, .icon-search, .icon-visible, .icon-eye, .icon-renew, .icon-edit, .icon-save, .icon-link, .icon-hidden, .icon-star, .icon-instock, .icon-outofstock, .icon-warning, .icon-plus, .icon-minus, .icon-left-chevron, .icon-right-chevron, .icon-product-delivery, .icon-product-delivery-small, .icon-trashcan, .icon-view, .icon-close, .icon-checkmark, .icon-download, .icon-upload, .icon-block {
+  display: block;
+  width: 100%;
+  height: 100% !important;
+  height: -webkit-fill-available;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  background-color: currentColor; }
+
+.icon-search {
+  padding: 8px;
+  -webkit-mask-image: url(https://cdn.cerve.com/ui/search_icon_16x16.svg);
+  mask-image: url(https://cdn.cerve.com/ui/search_icon_16x16.svg); }
+
+.icon-visible {
+  -webkit-mask-image: url(https://cdn.cerve.com/ui/visible_icon.svg);
+  mask-image: url(https://cdn.cerve.com/ui/visible_icon.svg); }
+
+.icon-eye {
+  -webkit-mask-image: url(https://cdn.cerve.com/ui/view.svg);
+  mask-image: url(https://cdn.cerve.com/ui/view.svg);
+  -webkit-mask-size: 18px auto; }
+  .icon-eye--hidden {
+    -webkit-mask-image: url(https://cdn.cerve.com/ui/view--off.svg);
+    mask-image: url(https://cdn.cerve.com/ui/view--off.svg); }
+
+.icon-renew {
+  -webkit-mask-image: url(https://cdn.cerve.com/ui/renew.svg);
+  mask-image: url(https://cdn.cerve.com/ui/renew.svg);
+  -webkit-mask-size: 15px auto; }
+
+.icon-edit {
+  -webkit-mask-image: url(https://cdn.cerve.com/ui/edit.svg);
+  mask-image: url(https://cdn.cerve.com/ui/edit.svg);
+  -webkit-mask-size: 15px auto; }
+
+.icon-save {
+  -webkit-mask-image: url(https://cdn.cerve.com/ui/save.svg);
+  mask-image: url(https://cdn.cerve.com/ui/save.svg);
+  -webkit-mask-size: 17px auto; }
+
+.icon-link {
+  -webkit-mask-image: url(https://cdn.cerve.com/ui/link.svg);
+  mask-image: url(https://cdn.cerve.com/ui/link.svg);
+  -webkit-mask-size: 18px auto; }
+  .icon-link--off {
+    -webkit-mask-image: url(https://cdn.cerve.com/ui/unlink.svg);
+    mask-image: url(https://cdn.cerve.com/ui/unlink.svg); }
+
+.icon-hidden {
+  -webkit-mask-image: url(https://cdn.cerve.com/ui/hidden_icon.svg);
+  mask-image: url(https://cdn.cerve.com/ui/hidden_icon.svg); }
+
+.icon-star {
+  -webkit-mask-image: url(https://cdn.cerve.com/ui/star.svg);
+  mask-image: url(https://cdn.cerve.com/ui/star.svg);
+  -webkit-mask-size: 18px auto; }
+  .icon-star--filled {
+    -webkit-mask-image: url(https://cdn.cerve.com/ui/star--filled.svg);
+    mask-image: url(https://cdn.cerve.com/ui/star--filled.svg); }
+
+.icon-instock {
+  -webkit-mask-image: url(https://cdn.cerve.com/ui/instock_icon.svg);
+  mask-image: url(https://cdn.cerve.com/ui/instock_icon.svg);
+  -webkit-mask-size: 18px auto; }
+
+.icon-outofstock {
+  -webkit-mask-image: url(https://cdn.cerve.com/ui/outofstock_icon.svg);
+  mask-image: url(https://cdn.cerve.com/ui/outofstock_icon.svg);
+  -webkit-mask-size: 18px auto; }
+
+.icon-warning {
+  -webkit-mask-image: url(https://cdn.cerve.com/ui/warning_icon.svg);
+  mask-image: url(https://cdn.cerve.com/ui/warning_icon.svg); }
+
+.icon-plus {
+  -webkit-mask-image: url(https://cdn.cerve.com/ui/product_plus_icon.svg);
+  mask-image: url(https://cdn.cerve.com/ui/product_plus_icon.svg); }
+
+.icon-minus {
+  -webkit-mask-image: url(https://cdn.cerve.com/ui/product_minus_icon.svg);
+  mask-image: url(https://cdn.cerve.com/ui/product_minus_icon.svg); }
+
+.icon-left-chevron {
+  -webkit-mask-image: url(https://cdn.cerve.com/ui/chevron_left_black.svg);
+  mask-image: url(https://cdn.cerve.com/ui/chevron_left_black.svg); }
+
+.icon-right-chevron {
+  -webkit-mask-image: url(https://cdn.cerve.com/ui/chevron_right_black.svg);
+  mask-image: url(https://cdn.cerve.com/ui/chevron_right_black.svg); }
+
+.icon-product-delivery {
+  display: inline-block;
+  height: 14px !important;
+  width: 14px !important;
+  -webkit-mask-image: url(https://cdn.cerve.com/ui/product_delivery_icon.svg);
+  mask-image: url(https://cdn.cerve.com/ui/product_delivery_icon.svg); }
+
+.icon-product-delivery-small {
+  display: inline-block;
+  height: 10px !important;
+  width: 10px !important;
+  -webkit-mask-image: url(https://cdn.cerve.com/ui/product_delivery_small_icon.svg);
+  mask-image: url(https://cdn.cerve.com/ui/product_delivery_small_icon.svg); }
+
+.icon-trashcan {
+  -webkit-mask-image: url(https://cdn.cerve.com/ui/trashcan_icon.svg);
+  mask-image: url(https://cdn.cerve.com/ui/trashcan_icon.svg);
+  -webkit-mask-size: 14px auto; }
+
+.icon-view {
+  -webkit-mask-image: url(https://cdn.cerve.com/ui/view.svg);
+  mask-image: url(https://cdn.cerve.com/ui/view.svg);
+  -webkit-mask-size: 20px auto; }
+  .icon-view--off {
+    -webkit-mask-image: url(https://cdn.cerve.com/ui/view--off.svg);
+    mask-image: url(https://cdn.cerve.com/ui/view--off.svg); }
+
+.icon-close {
+  -webkit-mask-image: url(https://cdn.cerve.com/ui/close--outline.svg);
+  mask-image: url(https://cdn.cerve.com/ui/close--outline.svg);
+  -webkit-mask-size: 16px auto;
+  height: 16px !important;
+  width: 16px !important; }
+
+.icon-checkmark {
+  -webkit-mask-image: url(https://cdn.cerve.com/ui/checkmark--filled.svg);
+  mask-image: url(https://cdn.cerve.com/ui/checkmark--filled.svg);
+  -webkit-mask-size: 16px auto;
+  height: 16px !important;
+  width: 16px !important; }
+
+.icon-download {
+  -webkit-mask-image: url(https://cdn.cerve.com/ui/download.svg);
+  mask-image: url(https://cdn.cerve.com/ui/download.svg);
+  -webkit-mask-size: 20px auto; }
+
+.icon-upload {
+  -webkit-mask-image: url(https://cdn.cerve.com/ui/upload.svg);
+  mask-image: url(https://cdn.cerve.com/ui/upload.svg);
+  -webkit-mask-size: 20px auto; }
+
+.icon-block {
+  -webkit-mask-image: url(https://cdn.cerve.com/ui/error--outline.svg);
+  mask-image: url(https://cdn.cerve.com/ui/error--outline.svg);
+  -webkit-mask-size: 18px auto; }
+  .icon-block--reverse {
+    -webkit-mask-image: url(https://cdn.cerve.com/ui/checkmark--outline.svg);
+    mask-image: url(https://cdn.cerve.com/ui/checkmark--outline.svg); }
+
+/*!
+ * CERVE PROPRIETARY INFORMATION
+ *
+ * This software is confidential. Cerve, or one of its
+ * subsidiaries, has supplied this software to you under terms of a
+ * license agreement, nondisclosure agreement or both.
+ *
+ * You may not copy, disclose, or use this software except in accordance with
+ * those terms.
+ *
+ * Copyright (c) 2021 Cerve
+ * ALL RIGHTS RESERVED.
+ *
+ * CERVE MAKES NO REPRESENTATIONS OR
+ * WARRANTIES ABOUT THE SUITABILITY OF THE SOFTWARE,
+ * EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+ * TO THE IMPLIED WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE, OR
+ * NON-INFRINGEMENT. CERVE SHALL NOT BE
+ * LIABLE FOR ANY DAMAGES SUFFERED BY LICENSEE
+ * AS A RESULT OF USING, MODIFYING OR DISTRIBUTING
+ * THIS SOFTWARE OR ITS DERIVATIVES.
+ */
+/* iPad portrait */
+/* iPhone X */
+/*!
+ * CERVE PROPRIETARY INFORMATION
+ *
+ * This software is confidential. Cerve, or one of its
+ * subsidiaries, has supplied this software to you under terms of a
+ * license agreement, nondisclosure agreement or both.
+ *
+ * You may not copy, disclose, or use this software except in accordance with
+ * those terms.
+ *
+ * Copyright (c) 2021 Cerve
+ * ALL RIGHTS RESERVED.
+ *
+ * CERVE MAKES NO REPRESENTATIONS OR
+ * WARRANTIES ABOUT THE SUITABILITY OF THE SOFTWARE,
+ * EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+ * TO THE IMPLIED WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE, OR
+ * NON-INFRINGEMENT. CERVE SHALL NOT BE
+ * LIABLE FOR ANY DAMAGES SUFFERED BY LICENSEE
+ * AS A RESULT OF USING, MODIFYING OR DISTRIBUTING
+ * THIS SOFTWARE OR ITS DERIVATIVES.
+ */
+@media screen and (min-width: 600px) {
+  .form-middle {
+    padding: 3rem 0 7rem; }
+    .form-middle.form-middle--cover {
+      position: relative;
+      min-height: 100vh;
+      padding: 150px 0 20vh;
+      background: #eaf2f2; }
+      .form-middle.form-middle--cover .button--outline {
+        border-color: #d0d7d9;
+        color: black; }
+    .form-middle h1 {
+      font-size: 40px;
+      line-height: 1; }
+    .form-middle_container {
+      max-width: 400px;
+      margin: 0 auto; }
+    .form-middle .bottomBox--absolute:not(.u-keep-mobile) {
+      position: static;
+      margin-top: 1rem; }
+    .form-middle .bottomBox--sticky {
+      position: fixed;
+      left: 50%;
+      transform: translateX(-50%); }
+    .form-middle .button, .form-middle .note__popup__button {
+      width: 280px;
+      margin-left: auto;
+      margin-right: auto; }
+      .form-middle .button--outline {
+        background: white; }
+      .form-middle .button--outline,
+      .form-middle .button--outline p {
+        color: #4d7bd5; }
+    .form-middle--wide-btn .button, .form-middle--wide-btn .note__popup__button {
+      width: 315px; }
+    .form-middle p:not(.form-middle_non-styled) {
+      font-size: 16px;
+      color: black; }
+  .popup__inner .cerve-logo {
+    display: none; }
+  .popup__inner .u-hPadStandard {
+    padding-left: 2.8rem;
+    padding-right: 2.8rem; }
+  .popup__inner .u-desktop-width-560-i {
+    width: 100% !important; }
+  .popup__inner .form-middle {
+    padding-top: 0;
+    padding-bottom: 5rem; }
+    .popup__inner .form-middle_content-center h1 {
+      width: 100%; }
+    .popup__inner .form-middle h1 {
+      font-size: 3.2rem; }
+    .popup__inner .form-middle .bottomBox--sticky {
+      position: sticky;
+      position: -webkit-sticky;
+      bottom: 0rem;
+      transform: none;
+      left: auto; } }
+
+@media screen and (max-width: 1399px) {
+  .form-middle_cover,
+  .form-middle_cover span, .form-middle_cover::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    overflow: hidden; }
+  .form-middle_cover {
+    background: black; }
+    .form-middle_cover::after {
+      content: "";
+      z-index: -1;
+      background-image: linear-gradient(to bottom, rgba(1, 1, 1, 0.3) 29%, #010101); }
+    .form-middle_cover span {
+      opacity: 0; }
+      .form-middle_cover span:nth-child(1) {
+        background: url(https://cdn.cerve.com/cover/mobile/cover1@2x.jpg) no-repeat center center/cover;
+        animation: 20s linear cover forwards infinite; }
+      .form-middle_cover span:nth-child(2) {
+        background: url(https://cdn.cerve.com/cover/mobile/cover2@2x.jpg) no-repeat center center/cover;
+        animation: 20s linear cover2 forwards infinite; }
+      .form-middle_cover span:nth-child(3) {
+        background: url(https://cdn.cerve.com/cover/mobile/cover3@2x.jpg) no-repeat center center/cover;
+        animation: 20s linear cover3 forwards infinite; }
+  @keyframes cover {
+    0% {
+      transform: scale(1);
+      opacity: 1; }
+    18% {
+      opacity: 1;
+      transform: scale(1.5); }
+    20% {
+      opacity: 0; }
+    30% { }
+    40% { }
+    50% { }
+    60% { }
+    70% { }
+    80% { }
+    90% { }
+    100% { } }
+  @keyframes cover2 {
+    0% { }
+    10% { }
+    20% { }
+    30% {
+      opacity: 0; }
+    40% {
+      transform: scale(1);
+      opacity: 1; }
+    58% {
+      opacity: 1;
+      transform: scale(1.5); }
+    60% {
+      opacity: 0;
+      transform: scale(1.5); }
+    70% {
+      opacity: 0; }
+    80% { }
+    90% { }
+    100% { } }
+  @keyframes cover3 {
+    0% { }
+    10% { }
+    20% { }
+    30% { }
+    40% { }
+    50% { }
+    60% { }
+    70% {
+      opacity: 0; }
+    80% {
+      transform: scale(1);
+      opacity: 1; }
+    98% {
+      opacity: 1;
+      transform: scale(1.5); }
+    100% {
+      transform: scale(1.5);
+      opacity: 0; } }
+  .form-middle.form-middle--cover {
+    background: transparent;
+    color: white; }
+    .form-middle.form-middle--cover p {
+      color: white; }
+    .form-middle.form-middle--cover::after, .form-middle.form-middle--cover::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1; }
+    .form-middle.form-middle--cover::after {
+      z-index: -2; }
+    .form-middle.form-middle--cover .button, .form-middle.form-middle--cover .note__popup__button {
+      width: 315px;
+      margin-left: auto;
+      margin-right: auto; }
+      .form-middle.form-middle--cover .button--outline {
+        background: white;
+        border-color: #d0d7d9;
+        color: black; }
+    .form-middle.form-middle--cover .coverGraphic__logo {
+      background: white;
+      border-radius: 50%;
+      border: 3px solid white;
+      width: 4.5rem;
+      height: 4.5rem; }
+    .form-middle.form-middle--cover .coverGraphic__text {
+      font-size: 48px; }
+    .form-middle.form-middle--cover .bottomBox--absolute {
+      position: absolute;
+      left: 0;
+      bottom: 4.4rem;
+      margin-top: 1rem; } }
+
+@media screen and (min-width: 600px) and (max-width: 1399px) {
+  .form-middle.form-middle--cover .bottomBox--absolute {
+    bottom: 8rem; }
+  .form-middle_cover {
+    background: black; }
+    .form-middle_cover span::after {
+      content: "";
+      z-index: -1;
+      background-image: linear-gradient(to bottom, rgba(1, 1, 1, 0.3) 29%, #010101); }
+    .form-middle_cover span:nth-child(1) {
+      background: url(https://cdn.cerve.com/cover/tablet/cover1@2x.jpg) no-repeat center center/cover; }
+    .form-middle_cover span:nth-child(2) {
+      background: url(https://cdn.cerve.com/cover/tablet/cover2@2x.jpg) no-repeat center center/cover; }
+    .form-middle_cover span:nth-child(3) {
+      background: url(https://cdn.cerve.com/cover/tablet/cover3@2x.jpg) no-repeat center center/cover; } }
+
+@media screen and (min-width: 1400px) {
+  .form-middle {
+    padding: 7rem 0 7rem; }
+    .form-middle.form-middle--cover::before, .form-middle.form-middle--cover::after {
+      content: "";
+      position: absolute; }
+    .form-middle.form-middle--cover::before {
+      left: 0;
+      top: 0;
+      width: 380px;
+      height: 440px;
+      background: url(https://cdn.cerve.com/cover/cover-1@2x.png) no-repeat right top/100% auto; }
+    .form-middle.form-middle--cover::after {
+      right: 0;
+      bottom: 0;
+      left: auto;
+      top: auto;
+      width: 460px;
+      height: 395px;
+      background: url(https://cdn.cerve.com/cover/cover-3@2x.png) no-repeat right top/100% auto; }
+    .form-middle.form-middle--cover p {
+      color: black; }
+    .form-middle_content-center {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .form-middle_content-center h1 {
+        width: 520px; }
+    .form-middle h1 {
+      font-size: 62px; }
+    .form-middle_container {
+      max-width: 480px; }
+    .form-middle p:not(.form-middle_non-styled) {
+      font-size: 18px; } }
+
+/* TODO: unify select field for all apps*/
+/* SELECT FIELD ----------------------------------------------------------------- */
+.selectField {
+  position: relative;
+  border: 1px solid #f3f4f4;
+  background: white;
+  font-size: 1.6rem;
+  width: 100%;
+  border-radius: 4px;
+  height: 3.9rem; }
+  .selectField:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 1.6rem;
+    width: 1.5rem;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat; }
+  .selectField:focus {
+    outline: none; }
+  .selectField--inline {
+    display: inline-block;
+    width: auto;
+    font-size: inherit;
+    border: 0; }
+    .selectField--inline .selectField__selected {
+      position: relative;
+      padding-left: 0; }
+    .selectField--inline .selectField__options {
+      width: auto; }
+    .selectField--inline .selectField__options {
+      left: -1.6rem; }
+  .selectField__input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    pointer-events: none; }
+  .selectField__selected, .selectField__placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0rem 0rem 1.6rem;
+    line-height: 1.5;
+    height: 100%;
+    width: 100%;
+    pointer-events: none; }
+  .selectField__selected {
+    display: none; }
+  .selectField__placeholder {
+    color: #9faab1; }
+  .selectField__options {
+    position: absolute;
+    left: -1px;
+    top: 100%;
+    width: calc(100% + 2px);
+    border: 1px solid #f3f4f4;
+    border-radius: 0 0 4px 4px;
+    visibility: hidden;
+    max-height: 19.74rem;
+    background: white;
+    z-index: 2;
+    overflow: hidden; }
+  .selectField__scroll {
+    height: 100%;
+    width: calc(100% + 5rem);
+    padding: 0.6rem 5rem 0.6rem 0;
+    max-height: 19.74rem;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    -webkit-overflow-scrolling: touch; }
+  .selectField__scrollBar {
+    position: absolute;
+    width: 3px;
+    height: 40px;
+    background: #ececec;
+    top: 0;
+    right: 0;
+    border-radius: 1px;
+    border: 1rem solid white;
+    box-sizing: content-box;
+    display: none; }
+  .selectField__option {
+    height: 4.2rem;
+    min-height: 4.2rem;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0rem 0rem 1.6rem;
+    line-height: 1.5;
+    color: #9faab1;
+    cursor: pointer; }
+    .selectField__option:hover {
+      color: black; }
+    .selectField__option.focus {
+      color: black; }
+  .selectField--show {
+    border-radius: 4px 4px 0 0; }
+    .selectField--show .selectField__options {
+      visibility: visible; }
+    .selectField--show:after {
+      transform: scaleY(-1); }
+  .selectField--top {
+    border-radius: 0 0 4px 4px; }
+    .selectField--top .selectField__options {
+      top: auto;
+      bottom: 100%;
+      border-radius: 4px 4px 0 0; }
+    .selectField--top .selectField__scroll {
+      flex-direction: column-reverse; }
+  .selectField--selected .selectField__placeholder {
+    display: none; }
+  .selectField--selected .selectField__selected {
+    display: flex; }
+  .selectField--autoSize {
+    max-width: 200px; }
+
+/*!
+ * CERVE PROPRIETARY INFORMATION
+ *
+ * This software is confidential. Cerve, or one of its
+ * subsidiaries, has supplied this software to you under terms of a
+ * license agreement, nondisclosure agreement or both.
+ *
+ * You may not copy, disclose, or use this software except in accordance with
+ * those terms.
+ *
+ * Copyright (c) 2021 Cerve
+ * ALL RIGHTS RESERVED.
+ *
+ * CERVE MAKES NO REPRESENTATIONS OR
+ * WARRANTIES ABOUT THE SUITABILITY OF THE SOFTWARE,
+ * EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+ * TO THE IMPLIED WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE, OR
+ * NON-INFRINGEMENT. CERVE SHALL NOT BE
+ * LIABLE FOR ANY DAMAGES SUFFERED BY LICENSEE
+ * AS A RESULT OF USING, MODIFYING OR DISTRIBUTING
+ * THIS SOFTWARE OR ITS DERIVATIVES.
+ */
+.iconButton {
+  width: 5rem;
+  height: 5rem;
+  margin: -1.1rem -1.1rem -1.1rem;
+  border-radius: 100%;
+  position: relative;
+  display: block;
+  cursor: pointer; }
+  .iconButton::after {
+    content: "";
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 100%;
+    background: rgba(0, 0, 0, 0.16);
+    z-index: 0; }
+  .iconButton > * {
+    z-index: 1; }
+  .iconButton::after,
+  .iconButton > * {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0); }
+  .iconButton--light {
+    width: 7rem;
+    height: 4rem;
+    margin: -1.4rem -0.8rem -0.8rem; }
+    .iconButton--light:after {
+      background: white;
+      width: 2.4rem;
+      height: 2.4rem;
+      border: 1px solid #ececec; }
+  .iconButton--reverse {
+    transform: rotate(180deg); }
+  .iconButton--zero {
+    color: var(--theme-primary);
+    border: 1px solid rgba(127, 134, 144, 0.1);
+    padding: 0 0 0 12px;
+    border-radius: 4px; }
+    .iconButton--zero > span {
+      font-size: 12px;
+      margin: 3px 0 0; }
+    .iconButton--zero .button, .iconButton--zero .note__popup__button {
+      background: none;
+      color: var(--theme-primary);
+      height: 3rem; }
+  .iconButton--out-of-stock {
+    color: #9faab1;
+    border: 1px solid rgba(127, 134, 144, 0.1);
+    padding: 0 0 0 12px;
+    border-radius: 4px;
+    height: 3rem; }
+    .iconButton--out-of-stock > span {
+      font-size: 12px;
+      margin: 3px 0 0; }
+
+/*!
+ * CERVE PROPRIETARY INFORMATION
+ *
+ * This software is confidential. Cerve, or one of its
+ * subsidiaries, has supplied this software to you under terms of a
+ * license agreement, nondisclosure agreement or both.
+ *
+ * You may not copy, disclose, or use this software except in accordance with
+ * those terms.
+ *
+ * Copyright (c) 2021 Cerve
+ * ALL RIGHTS RESERVED.
+ *
+ * CERVE MAKES NO REPRESENTATIONS OR
+ * WARRANTIES ABOUT THE SUITABILITY OF THE SOFTWARE,
+ * EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+ * TO THE IMPLIED WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE, OR
+ * NON-INFRINGEMENT. CERVE SHALL NOT BE
+ * LIABLE FOR ANY DAMAGES SUFFERED BY LICENSEE
+ * AS A RESULT OF USING, MODIFYING OR DISTRIBUTING
+ * THIS SOFTWARE OR ITS DERIVATIVES.
+ */
+.note__popup__count--frame {
+  text-align: left;
+  padding-top: 1.4rem;
+  padding-bottom: 0.9rem;
+  margin-top: -1px;
+  border: 1px solid #f3f4f4;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px; }
+
+/*!
+ * CERVE PROPRIETARY INFORMATION
+ *
+ * This software is confidential. Cerve, or one of its
+ * subsidiaries, has supplied this software to you under terms of a
+ * license agreement, nondisclosure agreement or both.
+ *
+ * You may not copy, disclose, or use this software except in accordance with
+ * those terms.
+ *
+ * Copyright (c) 2021 Cerve
+ * ALL RIGHTS RESERVED.
+ *
+ * CERVE MAKES NO REPRESENTATIONS OR
+ * WARRANTIES ABOUT THE SUITABILITY OF THE SOFTWARE,
+ * EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+ * TO THE IMPLIED WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE, OR
+ * NON-INFRINGEMENT. CERVE SHALL NOT BE
+ * LIABLE FOR ANY DAMAGES SUFFERED BY LICENSEE
+ * AS A RESULT OF USING, MODIFYING OR DISTRIBUTING
+ * THIS SOFTWARE OR ITS DERIVATIVES.
+ */
+.navbar {
+  padding-bottom: 5px;
+  border-bottom: 1.2px solid #80808012; }
+  .navbar--logo {
+    background-image: url("/public/images/header-image.jpeg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 0;
+    padding-left: 2.8rem;
+    padding-right: 2.8rem;
+    padding-bottom: 53.333%;
+    display: flex;
+    justify-content: space-between; }
+    .navbar--logo .title {
+      display: none; }
+  .navbar .logo-text {
+    width: 85px;
+    margin-top: -50px;
+    margin-bottom: 20px; }
+
+.navbar.scrolled {
+  margin-bottom: 250px; }
+  .navbar.scrolled .navbar--logo {
+    transition: all 0s, opacity 0.5s linear;
+    background: #d46625;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    padding: 0 2.8rem;
+    z-index: 99; }
+    .navbar.scrolled .navbar--logo .title {
+      display: block;
+      text-align: center; }
+      .navbar.scrolled .navbar--logo .title h3 {
+        color: white; }
+      .navbar.scrolled .navbar--logo .title span {
+        color: #bbb5b5;
+        font-size: 11px; }
+
+.navbar--logo .search-icon {
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 6px 8px; }
+
+.navbar--product--category {
+  margin-top: 40px; }
+
+.hScroll {
+  touch-action: manipulation;
+  width: 100%; }
+  .hScroll__track {
+    width: 100%;
+    white-space: nowrap;
+    pointer-events: none;
+    transition: transform 100ms cubic-bezier(0.165, 0.84, 0.44, 1);
+    -webkit-overflow-scrolling: touch;
+    padding-left: 2.8rem;
+    padding-right: 15rem; }
+    .hScroll__track > * {
+      display: inline-block;
+      vertical-align: top;
+      white-space: normal; }
+  .hScroll__card {
+    margin-right: 20px;
+    pointer-events: auto;
+    display: inline-block;
+    vertical-align: top;
+    width: 11.7rem; }
+    .hScroll__card--narrow {
+      width: 6.5rem; }
+    .hScroll__card--close {
+      margin-right: 12px; }
+    .hScroll__card--far {
+      margin-right: 36px; }
+    .hScroll__card--auto {
+      width: auto; }
+  .hScroll__progressBar {
+    height: 2px;
+    width: 100%;
+    overflow: hidden;
+    background: #f5f5f5; }
+  .hScroll__progressInner {
+    height: 100%;
+    background: black;
+    width: 10%;
+    transform: translateX(0);
+    transform-origin: left center; }
+  .hScroll--grid {
+    display: flex;
+    flex-wrap: wrap;
+    transform: translate3d(0, 0, 0); }
+    .hScroll--grid > * {
+      max-width: 30%;
+      min-width: 30%;
+      margin: 0 5% 4rem 0; }
+    .hScroll--grid > *:nth-child(3n) {
+      margin-right: 0; }
+
+.horizontalScroll {
+  overflow: hidden;
+  transform: translate3d(0, 0, 0); }
+  .horizontalScroll__track-header {
+    padding: 0 0 2rem 2.8rem;
+    margin-bottom: 20px; }
+  .horizontalScroll__track {
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    padding-top: 1px;
+    padding-bottom: 51px;
+    margin-bottom: -50px;
+    transform: translate3d(0, 0, 0);
+    transition: all 0s, opacity 0.5s linear; }
+  .horizontalScroll--fixedHeight {
+    height: 230px !important; }
+
+@media screen and (min-width: 1400px) {
+  .horizontalScroll__track {
+    overflow: hidden; } }
+
+@media screen and (min-width: 600px) {
+  .hScroll__card:not(.hScroll__card--far):not(.hScroll__card--narrow):not(.hScroll__card--checkout) {
+    width: 13.8rem;
+    margin-right: 25px; }
+  .hScroll--grid > * {
+    min-width: 0;
+    width: 13.8rem;
+    margin-right: 25px; }
+  .hScroll--grid > *:nth-child(3n) {
+    margin-right: 25px; }
+  .hScroll--grid > *:nth-child(8n) {
+    margin-right: 0; }
+  .hScroll--grid-small > *:nth-child(8n) {
+    margin-right: 25px; }
+  .hScroll--grid-small > *:nth-child(5n) {
+    margin-right: 0px; }
+  .horizontalScroll--fixedHeight {
+    height: 280px !important; }
+  .horizontalScroll__track {
+    transition: all 0s, opacity 0.5s linear; } }
+
+@media screen and (min-width: 600px) and (max-width: 1399px) {
+  .hScroll__card:not(.hScroll__card--far):not(.hScroll__card--narrow):not(.hScroll__card--checkout) {
+    width: 12.8rem;
+    margin-right: 22px; }
+    .hScroll__card:not(.hScroll__card--far):not(.hScroll__card--narrow):not(.hScroll__card--checkout) .image--category {
+      width: 100%; }
+  .hScroll--grid {
+    display: grid;
+    grid-column-gap: 22px;
+    grid-template-columns: repeat(auto-fill, 12.8rem);
+    justify-content: space-between; }
+    .hScroll--grid > * {
+      max-width: 100%;
+      min-width: 0;
+      width: 12.8rem;
+      margin-right: 22px !important;
+      margin-left: 0px !important; } }
+
+/*!
+ * CERVE PROPRIETARY INFORMATION
+ *
+ * This software is confidential. Cerve, or one of its
+ * subsidiaries, has supplied this software to you under terms of a
+ * license agreement, nondisclosure agreement or both.
+ *
+ * You may not copy, disclose, or use this software except in accordance with
+ * those terms.
+ *
+ * Copyright (c) 2021 Cerve
+ * ALL RIGHTS RESERVED.
+ *
+ * CERVE MAKES NO REPRESENTATIONS OR
+ * WARRANTIES ABOUT THE SUITABILITY OF THE SOFTWARE,
+ * EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+ * TO THE IMPLIED WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE, OR
+ * NON-INFRINGEMENT. CERVE SHALL NOT BE
+ * LIABLE FOR ANY DAMAGES SUFFERED BY LICENSEE
+ * AS A RESULT OF USING, MODIFYING OR DISTRIBUTING
+ * THIS SOFTWARE OR ITS DERIVATIVES.
+ */
+/* IMAGE ----------------------------------------------------------------- */
+.image {
+  position: relative;
+  border-radius: 100%; }
+  .image--small {
+    width: 3.2rem;
+    min-width: 3.2rem;
+    height: 3.2rem; }
+  .image--grad {
+    background: linear-gradient(45deg, var(--theme-secondary), var(--theme-tertiary)); }
+  .image--gray {
+    background: #fafafa; }
+  .image--border {
+    border: 1px solid #ececec; }
+  .image__text {
+    font-size: 1rem;
+    vertical-align: bottom;
+    font-weight: 500;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -25%, 0); }
+
+/* TEXT/IMAGE FIELD ----------------------------------------------------------------- */
+.showIconOnHover:hover .iconInline,
+.showIconOnHover input.active + .iconInline {
+  display: block !important; }
+
+.inlineField {
+  font-size: 14px;
+  width: 45px;
+  text-align: right;
+  padding: 5px 0px;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  pointer-events: none; }
+  .inlineField.active {
+    border: 1px solid #f3f4f4;
+    padding: 5px 8px;
+    pointer-events: auto; }
+
+.titleField {
+  border: 1px solid transparent;
+  border-radius: 4px; }
+  .titleField:hover, .titleField:focus {
+    border: 1px solid #f3f4f4; }
+
+.textField, .note__popup__textField, .filterField input,
+.imageField,
+.dropdown {
+  -webkit-appearance: none;
+  border: 1px solid #f3f4f4;
+  background: white;
+  font-size: 1.6rem;
+  width: 100%;
+  border-radius: 4px;
+  padding: 0.9rem 1.6rem 0.8rem;
+  line-height: 2rem;
+  color: black;
+  box-sizing: border-box;
+  resize: none;
+  display: inline-block; }
+  .textField--auto,
+  .imageField--auto,
+  .dropdown--auto {
+    width: auto; }
+  .textField--flex,
+  .imageField--flex,
+  .dropdown--flex {
+    display: flex; }
+  .textField--tall,
+  .imageField--tall,
+  .dropdown--tall {
+    padding: 1.8rem 1.6rem 1.2rem; }
+  .textField::placeholder, .note__popup__textField::placeholder, .filterField input::placeholder,
+  .imageField::placeholder,
+  .dropdown::placeholder {
+    font-size: 1.6rem;
+    line-height: normal;
+    color: #9faab1; }
+  .textField:focus::placeholder, .note__popup__textField:focus::placeholder, .filterField input:focus::placeholder,
+  .imageField:focus::placeholder,
+  .dropdown:focus::placeholder {
+    opacity: 0; }
+  .textField.disabled, .disabled.note__popup__textField, .filterField input.disabled,
+  .imageField.disabled,
+  .dropdown.disabled {
+    opacity: 0.4;
+    pointer-events: none; }
+  .textField.textField--disabled, .textField--disabled.note__popup__textField, .filterField input.textField--disabled,
+  .imageField.textField--disabled,
+  .dropdown.textField--disabled {
+    color: rgba(55, 56, 63, 0.4);
+    background: #e8f2f2; }
+  .textField--white,
+  .imageField--white,
+  .dropdown--white {
+    background: white; }
+  .textField--textarea, .note__popup__textField,
+  .imageField--textarea,
+  .dropdown--textarea {
+    height: 14rem;
+    line-height: 1.3 !important; }
+
+.imageField {
+  height: 14rem; }
+  .imageField__input {
+    display: none; }
+
+.filterField {
+  position: relative; }
+  .filterField__icon {
+    position: absolute;
+    top: 1.2rem;
+    right: 4.5rem; }
+  .filterField--search input {
+    padding: 1.5rem 1.6rem 1.5rem; }
+  .filterField--search .filterField__icon {
+    top: 1.9rem;
+    right: 2.9rem; }
+
+/* PRODUCT FIELD ----------------------------------------------------------------- */
+.productField {
+  position: relative;
+  border: 1px solid #f3f4f4;
+  background: white;
+  width: 100%;
+  border-radius: 4px;
+  line-height: normal;
+  color: black;
+  box-sizing: border-box;
+  resize: none; }
+  .productField--inline {
+    padding: 0.8rem; }
+  .productField__input {
+    appearance: none;
+    padding: 1.1rem 2rem 0.6rem;
+    width: 100%;
+    height: 7.2rem;
+    border: none;
+    background: transparent;
+    box-sizing: border-box;
+    font-size: 2.4rem;
+    font-weight: 500;
+    border-radius: 4px; }
+  .productField__list {
+    position: absolute;
+    top: calc(100% - 4px);
+    left: -1px;
+    width: calc(100% + 2px);
+    padding: 4px 2rem 0;
+    background: white;
+    border: 1px solid #f3f4f4;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    z-index: 2;
+    display: none; }
+  .productField__item {
+    display: flex;
+    padding: 1.5rem 0;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #f5f5f5; }
+  .productField__cover {
+    position: absolute;
+    top: 101%;
+    left: -5%;
+    width: 110%;
+    height: 100vh;
+    background: white;
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0; }
+  .productField__input:focus,
+  .productField__input:focus + .productField__list {
+    display: block;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); }
+  .productField__input:focus ~ .productField__cover {
+    opacity: 0.8; }
+
+/* BUTTON ----------------------------------------------------------------- */
+.button, .note__popup__button,
+.submitButton__input {
+  appearance: none;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  background-color: #4d7bd5;
+  height: 38px;
+  line-height: 2.4;
+  padding: 0rem 2rem 0rem;
+  border: none;
+  border-radius: 4px;
+  display: inline-block;
+  cursor: pointer; }
+  .button:hover, .note__popup__button:hover,
+  .submitButton__input:hover {
+    text-decoration: none; }
+  .button--small,
+  .submitButton__input--small {
+    height: 3.2rem;
+    font-size: 13px; }
+  .button--close,
+  .submitButton__input--close {
+    padding: 0;
+    width: 28px;
+    height: 28px;
+    background-color: white;
+    border: 1px solid #f3f4f4;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.02);
+    background-image: url(https://cdn.cerve.com/ui/close_circle.svg);
+    background-position: center;
+    background-repeat: no-repeat; }
+    .button--close:hover,
+    .submitButton__input--close:hover {
+      background-color: white; }
+  .button--icon,
+  .submitButton__input--icon {
+    position: relative;
+    width: 3.4rem;
+    height: 3.4rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    display: inline-block;
+    line-height: 5.6rem;
+    align-items: baseline !important;
+    min-width: 3.4rem;
+    text-align: center;
+    padding: 0px;
+    color: white;
+    border-radius: 4px; }
+    .button--icon-big,
+    .submitButton__input--icon-big {
+      width: 3.8rem;
+      height: 3.8rem; }
+    .button--icon__hover:hover,
+    .submitButton__input--icon__hover:hover {
+      color: var(--theme-primary) !important;
+      background-color: white !important; }
+    .button--icon__hover-primary:hover,
+    .submitButton__input--icon__hover-primary:hover {
+      color: white !important;
+      background-color: var(--theme-primary) !important;
+      border-color: var(--theme-primary) !important; }
+  .button--icon img,
+  .submitButton__input--icon img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0); }
+  .button--white,
+  .submitButton__input--white {
+    background-color: white;
+    border: 1px solid #f3f4f4;
+    color: black; }
+    .button--white:hover,
+    .submitButton__input--white:hover {
+      background-color: white;
+      color: #697881;
+      text-decoration: none; }
+  .button--wIcon,
+  .submitButton__input--wIcon {
+    background-color: white;
+    border: 1px solid #f3f4f4;
+    color: black;
+    display: flex;
+    align-items: center;
+    padding: 0 1.1rem; }
+    .button--wIcon icon,
+    .submitButton__input--wIcon icon {
+      width: 18px;
+      height: 18px !important; }
+    .button--wIcon:hover,
+    .submitButton__input--wIcon:hover {
+      filter: none; }
+      .button--wIcon:hover icon,
+      .submitButton__input--wIcon:hover icon {
+        color: var(--theme-primary) !important; }
+  .button--light, .note__popup__button,
+  .submitButton__input--light {
+    background: white;
+    border: 1px solid #e9edf0;
+    color: #9faab1; }
+  .button--left,
+  .submitButton__input--left {
+    text-align: left; }
+  .button--float,
+  .submitButton__input--float {
+    position: fixed;
+    bottom: 0; }
+  .button--outline,
+  .submitButton__input--outline {
+    color: #4d7bd5;
+    background: transparent;
+    border: 1px solid #f3f4f4;
+    padding: 0rem 2rem 3.8rem; }
+  .button[disabled], .note__popup__button[disabled],
+  .submitButton__input[disabled] {
+    opacity: 0.5;
+    pointer-events: none; }
+  .button + .button, .note__popup__button + .button, .button + .note__popup__button, .note__popup__button + .note__popup__button,
+  .submitButton__input + .button,
+  .submitButton__input + .note__popup__button {
+    margin-left: 1rem; }
+
+.submitButton {
+  position: relative;
+  display: inline-block; }
+  .submitButton__input {
+    width: 200px;
+    height: 52px;
+    padding-left: 16px;
+    padding-right: 100px;
+    margin: 0;
+    font-size: 18px;
+    padding-top: 4px; }
+    @media screen and (max-width: 599px) {
+      .submitButton__input {
+        padding-top: 8px; } }
+  .submitButton:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 20px;
+    height: 100%;
+    background-image: url("https://cdn.cerve.com/ui/button_arrow.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80% auto; }
+  .submitButton--loading {
+    pointer-events: none; }
+    .submitButton--loading:after {
+      background-image: url("https://cdn.cerve.com/ui/button_load.svg");
+      animation: spin 500ms cubic-bezier(0.77, 0, 0.175, 1) infinite; }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(180deg); } }
+  .submitButton--success {
+    pointer-events: none; }
+    .submitButton--success:after {
+      background-image: url("https://cdn.cerve.com/ui/button_tick.svg"); }
+
+.delete-row {
+  position: absolute;
+  left: 0;
+  width: 32px;
+  height: 32px;
+  top: 50%;
+  transform: translateY(-50%) translateX(-100%);
+  background: url(https://cdn.cerve.com/ui/close_circle.svg) no-repeat center/16px auto;
+  cursor: pointer;
+  opacity: 0; }
+
+/* LIGHTSWITCH ----------------------------------------------------------------- */
+.lightSwitch {
+  -webkit-appearance: none;
+  border: 1px solid #f3f4f4;
+  background: white;
+  font-size: 1.6rem;
+  width: 100%;
+  border-radius: 4px;
+  padding: 0.6rem 1.2rem 0.6rem 1.2rem;
+  color: black;
+  box-sizing: border-box;
+  resize: none;
+  display: flex; }
+  .lightSwitch__label {
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    line-height: 2.5rem;
+    margin: 0; }
+  .lightSwitch__input {
+    position: absolute;
+    -webkit-appearance: none;
+    opacity: 0;
+    margin: 0;
+    width: 35px;
+    height: 25px;
+    z-index: 1; }
+  .lightSwitch__display {
+    width: 4rem;
+    height: 2.4rem;
+    background: white;
+    border: 1px solid rgba(159, 170, 177, 0.35);
+    border-radius: 1.2rem;
+    position: relative;
+    transition: border 40ms linear; }
+    .lightSwitch__display:after {
+      content: "";
+      position: absolute;
+      top: 0.3rem;
+      left: 0.3rem;
+      width: 1.6rem;
+      height: 1.6rem;
+      border-radius: 100%;
+      background: #9faab1;
+      transition: transform 60ms cubic-bezier(0.165, 0.84, 0.44, 1), background 40ms linear; }
+  .lightSwitch__input:checked + .lightSwitch__display {
+    border: 1px solid rgba(77, 123, 213, 0.5); }
+    .lightSwitch__input:checked + .lightSwitch__display:after {
+      background: #4d7bd5;
+      transform: translateX(1.6rem); }
+
+/* SELECT FIELD ----------------------------------------------------------------- */
+.selectField {
+  position: relative;
+  border: 1px solid #f3f4f4;
+  background: white;
+  font-size: 1.6rem;
+  border-radius: 4px;
+  height: 3.9rem;
+  width: 100%;
+  min-width: 14rem; }
+  .selectField--autoHeight {
+    height: auto; }
+  .selectField:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 1.6rem;
+    width: 1.5rem;
+    height: 100%;
+    background-image: url(https://cdn.cerve.com/ui/chevron_down_gray.svg);
+    background-position: center;
+    background-repeat: no-repeat; }
+  .selectField--noarrow:after {
+    background: none; }
+  .selectField:focus {
+    outline: none; }
+  .selectField--inline {
+    display: inline-block;
+    width: auto;
+    font-size: inherit;
+    border: 0; }
+    .selectField--inline .selectField__selected {
+      position: relative;
+      padding-left: 0; }
+    .selectField--inline .selectField__options {
+      width: auto; }
+    .selectField--inline .selectField__options {
+      left: -1.6rem; }
+  .selectField__input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    pointer-events: none; }
+  .selectField__selected, .selectField__placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    padding: 0rem 0rem 0rem 1.6rem;
+    line-height: 1.5;
+    height: 100%;
+    width: 100%;
+    pointer-events: none; }
+  .selectField--sort .selectField__selected::before,
+  .selectField--sort .selectField__placeholder::before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    background: url(https://cdn.cerve.com/ui/list--numbered.svg) no-repeat center center/contain;
+    margin-right: 13px; }
+  .selectField--filter .selectField__selected::before,
+  .selectField--filter .selectField__placeholder::before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    background: url(http://dev.hub.cerve.com:3000/public/images/ui/list--filter.svg) no-repeat center center/contain;
+    margin-right: 13px; }
+  .selectField__selected {
+    display: none; }
+  .selectField__placeholder {
+    color: #9faab1; }
+  .selectField__options {
+    position: absolute;
+    left: -1px;
+    top: 100%;
+    width: calc(100% + 2px);
+    border: 1px solid #f3f4f4;
+    border-radius: 0 0 4px 4px;
+    visibility: hidden;
+    max-height: 19.74rem;
+    background: white;
+    z-index: 2;
+    overflow: hidden; }
+    .selectField__options--products .selectField__scroll {
+      display: block; }
+  .selectField__scroll {
+    height: 100%;
+    width: calc(100% + 5rem);
+    padding: 0.6rem 5rem 0.6rem 0;
+    max-height: 19.74rem;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    -webkit-overflow-scrolling: touch; }
+  .selectField__scrollBar {
+    position: absolute;
+    width: 3px;
+    height: 40px;
+    background: #ececec;
+    top: 0;
+    right: 0;
+    border-radius: 1px;
+    border: 1rem solid white;
+    box-sizing: content-box;
+    display: none; }
+  .selectField__option {
+    height: 4.2rem;
+    min-height: 4.2rem;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1.6rem 0rem 1.6rem;
+    line-height: 1.5;
+    color: #9faab1;
+    cursor: pointer; }
+    .selectField__option:hover {
+      color: black; }
+    .selectField__option.focus {
+      color: black; }
+    .selectField__option--product {
+      padding: 0.8rem 1.6rem 0.8rem 1.6rem;
+      height: auto;
+      min-height: auto; }
+      .selectField__option--product:hover {
+        color: var(--theme-primary); }
+        .selectField__option--product:hover .t-black {
+          color: var(--theme-primary); }
+  .selectField--checkbox-empty .selectField__option::before {
+    content: "";
+    width: 15px;
+    height: 10px;
+    background: url(https://cdn.cerve.com/ui/checkbox_empty.svg) no-repeat center center/contain;
+    margin-right: 13px; }
+  .selectField--checkbox-checked .selectField__option::before {
+    content: "";
+    width: 15px;
+    height: 10px;
+    background: url(https://cdn.cerve.com/ui/checkbox_ticked.svg) no-repeat center center/contain;
+    margin-right: 13px; }
+  .selectField--checkbox-dash .selectField__option::before {
+    content: "";
+    width: 15px;
+    height: 10px;
+    background: url(https://cdn.cerve.com/ui/checkbox_part.svg) no-repeat center center/contain;
+    margin-right: 13px; }
+  .selectField--show {
+    border-radius: 4px 4px 0 0; }
+    .selectField--show .selectField__options {
+      visibility: visible; }
+    .selectField--show:after {
+      transform: scaleY(-1); }
+  .selectField--top {
+    border-radius: 0 0 4px 4px; }
+    .selectField--top .selectField__options {
+      top: auto;
+      bottom: 100%;
+      border-radius: 4px 4px 0 0; }
+    .selectField--top .selectField__scroll {
+      flex-direction: column-reverse; }
+  .selectField--selected .selectField__placeholder {
+    display: none; }
+  .selectField--selected .selectField__selected {
+    display: flex; }
+  .selectField--autoSize {
+    max-width: 200px; }
+
+.selectInline {
+  font-weight: inherit;
+  font-size: inherit;
+  border: 0;
+  color: #4d7bd5; }
+  .selectInline option {
+    font-size: 16px; }
+
+/* TAB BUTTON ----------------------------------------------------------------- */
+.tabBtn {
+  cursor: pointer; }
+  .tabBtn--active .dot {
+    color: #4d7bd5; }
+  .tabBtn--selected {
+    color: #4d7bd5;
+    border: 1px solid #4d7bd5; }
+
+.dot {
+  font-size: 3.1rem;
+  vertical-align: middle;
+  line-height: 1.1rem;
+  display: inline-block;
+  margin: 0px 4px 4px 0px;
+  color: #9faab1; }
+  .dot--active {
+    color: #4d7bd5; }
+
+.dropdown {
+  background-image: url("https://cdn.cerve.com/ui/ui/caret_down.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px center; }
+  .dropdown--autoSize {
+    max-width: 200px; }
+
+.dropdown-active-wrap {
+  position: relative; }
+  .dropdown-active-wrap .dot {
+    position: absolute;
+    left: 17px;
+    top: 24px; }
+  .dropdown-active-wrap .dropdown {
+    padding-left: 3.8rem; }
+
+/*!
+ * CERVE PROPRIETARY INFORMATION
+ *
+ * This software is confidential. Cerve, or one of its
+ * subsidiaries, has supplied this software to you under terms of a
+ * license agreement, nondisclosure agreement or both.
+ *
+ * You may not copy, disclose, or use this software except in accordance with
+ * those terms.
+ *
+ * Copyright (c) 2021 Cerve
+ * ALL RIGHTS RESERVED.
+ *
+ * CERVE MAKES NO REPRESENTATIONS OR
+ * WARRANTIES ABOUT THE SUITABILITY OF THE SOFTWARE,
+ * EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+ * TO THE IMPLIED WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE, OR
+ * NON-INFRINGEMENT. CERVE SHALL NOT BE
+ * LIABLE FOR ANY DAMAGES SUFFERED BY LICENSEE
+ * AS A RESULT OF USING, MODIFYING OR DISTRIBUTING
+ * THIS SOFTWARE OR ITS DERIVATIVES.
+ */
+.image {
+  position: relative; }
+  .image__inner {
+    width: 100%;
+    min-width: 100%;
+    min-height: 102%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: auto;
+    position: relative;
+    z-index: 2; }
+  .image__disabled {
+    opacity: 0.4 !important; }
+  .image__inner--product {
+    background-size: auto 100%;
+    background-position: center; }
+  .image__select {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    transform: scale(0);
+    z-index: 1;
+    transition: transform 320ms cubic-bezier(0.77, 0, 0.175, 1); }
+  .image--selected .image__select {
+    transform: scale(1); }
+  .image--mapPin {
+    width: 3.6rem;
+    height: 3.6rem;
+    border-radius: 100%; }
+    :checked + .image--mapPin--checkbox .image__inner {
+      background-image: url(https://cdn.cerve.com/ui/checkmark.svg) !important; }
+  .image--avatar, .image--cerve {
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 100%; }
+  .image--avatarLarge {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 100%; }
+  .image--avatar .image__inner {
+    border-radius: 100%;
+    background: white; }
+  .image--productFull {
+    width: 15.5rem;
+    height: 15.5rem; }
+  .image--productList {
+    width: 4rem;
+    height: 4rem; }
+  .image--productLarge {
+    margin: auto auto 20px auto;
+    width: 11rem;
+    height: 11rem; }
+  .image--productGrid {
+    margin: auto;
+    width: 9rem;
+    height: 9rem; }
+  .image--storeList {
+    width: 3.6rem;
+    height: 3.6rem; }
+  .image--productMedium {
+    width: 5.5rem;
+    height: 5.5rem; }
+  .image--productSmall {
+    border-radius: 100%; }
+  .image--category {
+    overflow: hidden;
+    border-radius: 1.6rem;
+    width: 14rem;
+    height: 16.8rem;
+    -webkit-mask-image: -webkit-radial-gradient(white, black); }
+  .image--category .image__inner {
+    background-color: #fafafa; }
+  .image--category .image__img {
+    position: absolute;
+    bottom: -3.25rem;
+    right: -2.5rem;
+    width: 100%;
+    transform: rotate(0deg); }
+  .image--delivery {
+    border-radius: 100%;
+    width: 6rem;
+    height: 6rem; }
+  .image--deliverySmall, .image--review {
+    border-radius: 100%;
+    width: 2rem;
+    height: 2rem;
+    min-width: 2rem;
+    min-height: 2rem;
+    max-width: 2rem;
+    max-height: 2rem; }
+  .image--delivery, .image--deliverySmall {
+    background-color: #dedded; }
+  .image--delivery::after {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
+    border-radius: 100%;
+    border: 2px solid transparent;
+    transition: border 220ms linear; }
+  .image--selected .image--delivery::after {
+    border-color: #d7d7e4; }
+  .image--header {
+    width: 100%;
+    height: 24rem;
+    margin-top: -2rem;
+    margin-bottom: 1.2rem; }
+    .image--header .image__inner {
+      background-size: cover;
+      background-position: 50% 0%; }
+    .image--header-contain {
+      margin-top: -3.2rem; }
+      .image--header-contain .image__inner {
+        background-size: contain;
+        background-color: #edf1f4; }
+
+@media screen and (min-width: 600px) {
+  .image--productLarge, .image--productGrid {
+    width: 12.8rem;
+    height: 12.8rem;
+    margin-bottom: 10px; } }
+
+@media screen and (min-width: 1400px) {
+  .image--productLarge, .image--productGrid {
+    width: 13.8rem;
+    height: 13.8rem;
+    margin-bottom: 10px; } }
+
+/*!
+ * CERVE PROPRIETARY INFORMATION
+ *
+ * This software is confidential. Cerve, or one of its
+ * subsidiaries, has supplied this software to you under terms of a
+ * license agreement, nondisclosure agreement or both.
+ *
+ * You may not copy, disclose, or use this software except in accordance with
+ * those terms.
+ *
+ * Copyright (c) 2021 Cerve
+ * ALL RIGHTS RESERVED.
+ *
+ * CERVE MAKES NO REPRESENTATIONS OR
+ * WARRANTIES ABOUT THE SUITABILITY OF THE SOFTWARE,
+ * EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+ * TO THE IMPLIED WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE, OR
+ * NON-INFRINGEMENT. CERVE SHALL NOT BE
+ * LIABLE FOR ANY DAMAGES SUFFERED BY LICENSEE
+ * AS A RESULT OF USING, MODIFYING OR DISTRIBUTING
+ * THIS SOFTWARE OR ITS DERIVATIVES.
+ */
+/* Prevent scrolling in body */
+html,
+body {
+  margin: 0;
+  overscroll-behavior: contain;
+  height: 100%; }
+
+*,
+*:before,
+*:after {
+  -webkit-tap-highlight-color: transparent;
+  font-family: "Aktiv Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; }
+
+p,
+span,
+a,
+img,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+html {
+  font-size: 10px;
+  /* setting rem */
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+body {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.2; }
+
+/* Customize browser styling */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  touch-action: manipulation; }
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: normal;
+  margin: 0; }
+
+img {
+  pointer-events: none; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+p {
+  margin: 0; }
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+textarea {
+  height: 100% !important;
+  resize: none !important;
+  outline: none !important;
+  background-color: transparent; }
+
+button,
+input {
+  -webkit-appearance: none;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+  outline: none !important; }
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none; }
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
+
+input[type="number"] {
+  -moz-appearance: textfield; }
+
+@media screen and (min-width: 600px) {
+  button {
+    cursor: pointer; } }
+
+/*!
+ * CERVE PROPRIETARY INFORMATION
+ *
+ * This software is confidential. Cerve, or one of its
+ * subsidiaries, has supplied this software to you under terms of a
+ * license agreement, nondisclosure agreement or both.
+ *
+ * You may not copy, disclose, or use this software except in accordance with
+ * those terms.
+ *
+ * Copyright (c) 2021 Cerve
+ * ALL RIGHTS RESERVED.
+ *
+ * CERVE MAKES NO REPRESENTATIONS OR
+ * WARRANTIES ABOUT THE SUITABILITY OF THE SOFTWARE,
+ * EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+ * TO THE IMPLIED WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE, OR
+ * NON-INFRINGEMENT. CERVE SHALL NOT BE
+ * LIABLE FOR ANY DAMAGES SUFFERED BY LICENSEE
+ * AS A RESULT OF USING, MODIFYING OR DISTRIBUTING
+ * THIS SOFTWARE OR ITS DERIVATIVES.
+ */
+/* Margins */
+.u-m0 {
+  margin: 0 !important; }
+
+.u-mt-7 {
+  margin-top: -0.7rem; }
+
+.u-mt-5 {
+  margin-top: -0.5rem; }
+
+.u-mt5 {
+  margin-top: 0.5rem; }
+
+.u-mt10 {
+  margin-top: 1rem; }
+
+.u-mt15 {
+  margin-top: 1.5rem; }
+
+.u-mt18 {
+  margin-top: 1.8rem; }
+
+.u-mt20 {
+  margin-top: 2rem; }
+
+.u-mt25 {
+  margin-top: 2.5rem; }
+
+.u-mt30 {
+  margin-top: 3rem; }
+
+.u-mt40 {
+  margin-top: 4rem; }
+
+.u-mt50 {
+  margin-top: 5rem; }
+
+.u-mt60 {
+  margin-top: 6rem; }
+
+.u-mt70 {
+  margin-top: 7rem; }
+
+.u-mt875 {
+  margin-top: 8.75rem; }
+
+.u-mt120 {
+  margin-top: 12rem; }
+
+.u-mb0 {
+  margin-bottom: 0; }
+
+.u-mb2 {
+  margin-bottom: 0.2rem; }
+
+.u-mb5 {
+  margin-bottom: 0.5rem; }
+
+.u-mb8 {
+  margin-bottom: 0.8rem; }
+
+.u-mb10 {
+  margin-bottom: 1rem; }
+
+.u-mb12 {
+  margin-bottom: 1.2rem; }
+
+.u-mb15 {
+  margin-bottom: 1.5rem; }
+
+.u-mb16 {
+  margin-bottom: 1.6rem; }
+
+.u-mb18 {
+  margin-bottom: 1.8rem; }
+
+.u-mb20 {
+  margin-bottom: 2rem; }
+
+.u-mb25 {
+  margin-bottom: 2.5rem; }
+
+.u-mb30 {
+  margin-bottom: 3rem; }
+
+.u-mb35 {
+  margin-bottom: 3.5rem; }
+
+.u-mb40 {
+  margin-bottom: 4rem; }
+
+.u-mb45 {
+  margin-bottom: 4.5rem; }
+
+.u-mb50 {
+  margin-bottom: 5rem; }
+
+.u-mb60 {
+  margin-bottom: 6rem; }
+
+.u-mb70 {
+  margin-bottom: 7rem; }
+
+.u-mb90 {
+  margin-bottom: 9rem; }
+
+.u-mb120 {
+  margin-bottom: 12rem; }
+
+.u-mb200 {
+  margin-bottom: 20rem; }
+
+.u-ml-4 {
+  margin-left: -0.4rem; }
+
+.u-ml4 {
+  margin-left: 0.4rem; }
+
+.u-ml8 {
+  margin-left: 0.8rem; }
+
+.u-ml10 {
+  margin-left: 1rem; }
+
+.u-ml12 {
+  margin-left: 1.2rem; }
+
+.u-ml20 {
+  margin-left: 2rem; }
+
+.u-ml30 {
+  margin-left: 3rem; }
+
+.u-mr4 {
+  margin-right: 0.4rem; }
+
+.u-mr8 {
+  margin-right: 0.8rem; }
+
+.u-mr10 {
+  margin-right: 1rem; }
+
+.u-mr12 {
+  margin-right: 1.2rem; }
+
+.u-mr20 {
+  margin-right: 2rem; }
+
+.u-mr30 {
+  margin-right: 3rem; }
+
+/* Padding */
+.u-hPadStandard {
+  padding-left: 2.8rem;
+  padding-right: 2.8rem; }
+
+.u-hPad0-i {
+  padding-left: 0rem !important;
+  padding-right: 0rem !important; }
+
+.u-hPad10 {
+  padding-left: 1rem;
+  padding-right: 1rem; }
+
+.u-hPad16 {
+  padding-left: 1.6rem;
+  padding-right: 1.6rem; }
+
+.u-hPad20 {
+  padding-left: 2rem;
+  padding-right: 2rem; }
+
+.u-hPad30 {
+  padding-left: 3rem;
+  padding-right: 3rem; }
+
+.u-hPad80 {
+  padding-left: 8rem;
+  padding-right: 8rem; }
+
+.u-vPadStandard {
+  padding-top: 2.8rem;
+  padding-bottom: 2.8rem; }
+
+.u-vPad10 {
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+
+.u-vPad14 {
+  padding-top: 1.4rem;
+  padding-bottom: 1.4rem; }
+
+.u-vPad20 {
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+
+.u-vPad30 {
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+
+.u-rPad30 {
+  padding-right: 3rem; }
+
+.u-bPad10 {
+  padding-bottom: 1rem; }
+
+.u-bPad14 {
+  padding-bottom: 1.4rem; }
+
+.u-bPad20 {
+  padding-bottom: 2rem; }
+
+.u-bPad30 {
+  padding-bottom: 3rem; }
+
+.u-bPad50 {
+  padding-bottom: 5rem; }
+
+.u-bPadStandard {
+  padding-bottom: 2.8rem; }
+
+.u-tPadStandard {
+  padding-top: 2.8rem; }
+
+.u-tPad1 {
+  padding-top: 0.1rem; }
+
+.u-tPad5 {
+  padding-top: 0.5rem; }
+
+.u-tPad6 {
+  padding-top: 0.6rem; }
+
+.u-tPad8 {
+  padding-top: 0.8rem; }
+
+.u-tPad10 {
+  padding-top: 1rem; }
+
+.u-tPad16 {
+  padding-top: 1.6rem; }
+
+.u-tPad18 {
+  padding-top: 1.8rem; }
+
+.u-tPad20 {
+  padding-top: 2rem; }
+
+.u-tPad24 {
+  padding-top: 2.4rem; }
+
+.u-tPad25 {
+  padding-top: 2.5rem; }
+
+.u-tPad40 {
+  padding-top: 4rem; }
+
+.u-tPad50 {
+  padding-top: 5rem; }
+
+.u-tPad60 {
+  padding-top: 6rem; }
+
+.u-tPad80 {
+  padding-top: 8rem; }
+
+.u-tPad120 {
+  padding-top: 12rem; }
+
+.u-tPad180 {
+  padding-top: 18rem; }
+
+/* Borders */
+.u-borderBreak {
+  border-bottom: 1px solid #fafafa; }
+
+.u-noLastBorder:last-of-type {
+  border: 0; }
+
+.u-borderShadow {
+  border: 1px solid #ececec;
+  box-shadow: 0 1px 2px 0 rgba(127, 134, 144, 0.1); }
+
+.u-borderBottom, .u-divider {
+  border-bottom-width: 1px;
+  border-bottom-style: solid; }
+
+.u-borderTop, .u-divider {
+  border-top-width: 1px;
+  border-top-style: solid; }
+
+.u-borderBlack5 {
+  border-color: rgba(0, 0, 0, 0.05); }
+
+.u-borderGrey {
+  border-color: #ececec; }
+
+.u-borderWhitish {
+  border-color: #fafafa; }
+
+.u-borderGrey10 {
+  border-color: rgba(159, 170, 177, 0.1); }
+
+.u-borderGrey20 {
+  border-color: rgba(159, 170, 177, 0.2); }
+
+.u-divider {
+  margin-top: -2rem !important;
+  height: 2rem;
+  background-color: #f5f5f5; }
+
+.u-br6 {
+  border-radius: 6px; }
+
+.u-brFull {
+  border-radius: 100%; }
+
+.u-br-bot-0 {
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px; }
+
+/* Position */
+.u-relative {
+  position: relative; }
+
+.u-absolute {
+  position: absolute; }
+
+.u-absoluteCover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.u-absoluteCenter {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate3d(-50%, -50%, 0); }
+
+.u-absoluteVCenter {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.u-absoluteHCenter {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%); }
+
+.u-absoluteHLeft {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  background: white;
+  height: 100%; }
+
+.u-back {
+  z-index: -1; }
+
+.u-block {
+  display: block; }
+
+.u-none {
+  display: none !important; }
+
+.u-invisible {
+  visibility: hidden; }
+
+.u-fullWidth, .note__popup__button {
+  width: 100%; }
+
+.u-fullHeight {
+  height: 100%; }
+
+.u-sticky, .u-stickyTop {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 1; }
+
+.u-stickyTop {
+  top: -1px; }
+
+.u-fixed {
+  position: fixed; }
+
+/* Flex */
+.u-flex {
+  display: flex; }
+
+.u-inlineFlex {
+  display: inline-flex; }
+
+.u-flexWrap {
+  flex-wrap: wrap; }
+
+.u-flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.u-flexVCenter {
+  display: flex;
+  align-items: center; }
+
+.u-flexEdges {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.u-flexColumn {
+  display: flex;
+  flex-direction: column; }
+
+.u-FlexStartJustifyContent {
+  justify-content: flex-start; }
+
+.u-flexGap1 {
+  gap: 1rem; }
+
+.u-flexGap12 {
+  gap: 1.2rem; }
+
+.u-flexGap14 {
+  gap: 1.4rem; }
+
+.u-flexGap2 {
+  gap: 2rem; }
+
+.u-flexGap3 {
+  gap: 3rem; }
+
+.u-flexGap4 {
+  gap: 4rem; }
+
+.u-flex1 {
+  flex: 0.1; }
+
+.u-flex2 {
+  flex: 0.2; }
+
+.u-flex5 {
+  flex: 0.5; }
+
+.u-flex10 {
+  flex: 1; }
+
+.u-flex15 {
+  flex: 1.5; }
+
+.u-flex25 {
+  flex: 2.5; }
+
+/* Filters */
+.u-grayscale {
+  filter: grayscale(100%); }
+
+.u-desaturate {
+  filter: saturate(80%); }
+
+.u-dim, .button:hover, .note__popup__button:hover,
+.submitButton__input:hover {
+  filter: brightness(90%); }
+
+/* Background */
+.u-bgBlack {
+  background-color: black; }
+
+.u-bgDarkGrey {
+  background-color: #97a3ac; }
+
+.u-bgMidGrey {
+  background-color: #e9edf0; }
+
+.u-bgGrey {
+  background-color: #f5f5f5; }
+
+.u-bgLightGrey {
+  background-color: #fafafa; }
+
+.u-bgWhite {
+  background-color: white; }
+
+.u-bgPrimary {
+  background-color: #4d7bd5; }
+
+.u-bgGrossisteThemePrimary {
+  background-color: var(--theme-primary); }
+
+.u-bgGrossisteThemeGradient {
+  background: linear-gradient(45deg, var(--theme-secondary), var(--theme-tertiary)); }
+
+.t-altGrey {
+  color: #9faab1; }
+
+.t-primary {
+  color: #4d7bd5; }
+
+/* Shadows */
+.u-shadowTop {
+  box-shadow: 0 0 2px #9faab1; }
+
+.u-shadowBottom {
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2); }
+
+/* Pointer */
+.u-pointerNone {
+  pointer-events: none; }
+
+.u-pointerAuto {
+  pointer-events: auto; }
+
+/* Other */
+.u-noScrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none; }
+  .u-noScrollbar::-webkit-scrollbar {
+    display: none; }
+
+.u-line-clamp-4 {
+  display: block;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  text-overflow: ellipsis;
+  overflow: hidden !important;
+  -webkit-box-orient: vertical;
+  max-height: 5em; }
+
+.linkRounded {
+  border-radius: 13px;
+  border: 1px solid rgba(127, 134, 144, 0.1);
+  padding: 0.6rem 0.8rem 0.1rem;
+  color: var(--theme-primary); }
+  .linkRounded__on {
+    display: none; }
+  .linkRounded--mid {
+    border-radius: 14px;
+    padding: 0.6rem 1.2rem 0.2rem; }
+  .linkRounded img {
+    margin: -0.4rem 0 0 0.5rem; }
+  :checked + .interest-row .linkRounded {
+    background: #4d7bd5;
+    color: white; }
+  :checked + .interest-row .linkRounded__on {
+    display: initial; }
+  :checked + .interest-row .linkRounded__off {
+    display: none; }
+  :checked + .interest-row .linkRounded .icon-checkmark {
+    display: block !important; }
+
+/* Responsive */
+@media screen and (min-width: 600px) {
+  .u-desktop-tPad0 {
+    padding-top: 0rem; }
+    .u-desktop-tPad0-i {
+      padding-top: 0rem !important; }
+  .u-desktop-tPad10 {
+    padding-top: 1rem; }
+  .u-desktop-tPad14 {
+    padding-top: 1.4rem; }
+  .u-desktop-tPad16 {
+    padding-top: 1.6rem; }
+  .u-desktop-tPad24 {
+    padding-top: 2.4rem; }
+  .u-desktop-tPad32 {
+    padding-top: 3.2rem; }
+  .u-desktop-tPad44 {
+    padding-top: 4.4rem; }
+  .u-desktop-tPad60 {
+    padding-top: 6rem; }
+  .u-desktop-bPad0 {
+    padding-bottom: 0rem; }
+  .u-desktophPad0 {
+    padding-left: 0;
+    padding-right: 0; }
+    .u-desktophPad0-i {
+      padding-left: 0 !important;
+      padding-right: 0 !important; }
+  .u-desktop-rPad40 {
+    padding-right: 4rem; }
+  .u-desktop-vPad20 {
+    padding-top: 2rem;
+    padding-bottom: 2rem; }
+  .u-desktop-hPad16-i {
+    padding-right: 1.6rem !important;
+    padding-left: 1.6rem !important; }
+  .u-desktop-hPad20 {
+    padding-left: 2rem;
+    padding-right: 2rem; }
+  .u-desktop-hPad24 {
+    padding-right: 2.4rem;
+    padding-left: 2.4rem; }
+  .u-desktop-hPad48 {
+    padding-left: 4.8rem;
+    padding-right: 4.8rem; }
+  .u-desktop-hPad93 {
+    padding-left: 9.3rem;
+    padding-right: 9.3rem; }
+  .u-desktop-right {
+    margin-left: auto; }
+  .u-desktop-mr0 {
+    margin-right: 0; }
+  .u-desktop-mt0 {
+    margin-top: 0rem; }
+  .u-desktop-mt8 {
+    margin-top: 0.8rem; }
+  .u-desktop-mb0 {
+    margin-bottom: 0rem; }
+  .u-desktop-mb8 {
+    margin-bottom: 0.8rem; }
+  .u-desktop-mb16 {
+    margin-bottom: 1.6rem; }
+  .u-desktop-mb20 {
+    margin-bottom: 2rem; }
+  .u-desktop-mb30 {
+    margin-bottom: 3rem; }
+  .u-desktop-mb40 {
+    margin-bottom: 4rem; }
+  .u-desktop-mb48 {
+    margin-bottom: 4.8rem; }
+  .u-desktop-mb70 {
+    margin-bottom: 7rem; }
+  .u-desktop-mb85 {
+    margin-bottom: 8.5rem; }
+  .u-desktop-autoHeight {
+    height: auto; }
+  .u-desktop-none {
+    display: none !important; }
+  .u-desktop-overflow-x {
+    overflow-y: hidden !important;
+    overflow-x: scroll !important; }
+  .u-desktop-hover-border, .u-desktop-focus-border {
+    transition: border 0.2s; }
+    .u-desktop-hover-border:hover, .u-desktop-focus-border:hover {
+      border-color: rgba(127, 134, 144, 0.4); }
+  .u-desktop-focus-border:focus {
+    border-color: rgba(127, 134, 144, 0.4); }
+  .u-desktop-hover-grey {
+    cursor: pointer; }
+  .u-desktop-maxWidth175 {
+    max-width: 175px; }
+  .u-desktop-flex {
+    display: flex; } }
+
+@media screen and (min-width: 1400px) {
+  .u-desktop-min-none {
+    display: none; }
+  .u-desktop-width-560-i {
+    width: 560px !important; } }
+
+@media screen and (min-width: 600px) and (max-width: 1399px) {
+  .u-tablet-none {
+    display: none !important; }
+  .u-tablet-hPad62 {
+    padding-left: 6.2rem;
+    padding-right: 6.2rem; }
+  .u-tablet-lPad62 {
+    padding-left: 6.2rem; } }
+
+@media screen and (max-width: 599px) {
+  .u-mobile-none {
+    display: none !important; } }
+
+/*!
+ * CERVE PROPRIETARY INFORMATION
+ *
+ * This software is confidential. Cerve, or one of its
+ * subsidiaries, has supplied this software to you under terms of a
+ * license agreement, nondisclosure agreement or both.
+ *
+ * You may not copy, disclose, or use this software except in accordance with
+ * those terms.
+ *
+ * Copyright (c) 2021 Cerve
+ * ALL RIGHTS RESERVED.
+ *
+ * CERVE MAKES NO REPRESENTATIONS OR
+ * WARRANTIES ABOUT THE SUITABILITY OF THE SOFTWARE,
+ * EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+ * TO THE IMPLIED WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE, OR
+ * NON-INFRINGEMENT. CERVE SHALL NOT BE
+ * LIABLE FOR ANY DAMAGES SUFFERED BY LICENSEE
+ * AS A RESULT OF USING, MODIFYING OR DISTRIBUTING
+ * THIS SOFTWARE OR ITS DERIVATIVES.
+ */
+/* Font Size */
+.t-size10 {
+  font-size: 1.0rem; }
+
+.t-size11 {
+  font-size: 1.1rem; }
+
+.t-size12, .note__link, .note__popup__count {
+  font-size: 1.2rem; }
+
+.t-size13 {
+  font-size: 1.3rem; }
+
+.t-size14, .note__text, .note__popup__textField, .note__popup__count--frame {
+  font-size: 1.4rem; }
+
+.t-size15 {
+  font-size: 1.5rem; }
+
+.t-size16 {
+  font-size: 1.6rem; }
+
+.t-size17, .note__title {
+  font-size: 1.7rem; }
+
+.t-size18 {
+  font-size: 1.8rem; }
+
+.t-size20 {
+  font-size: 2.0rem; }
+
+.t-size22 {
+  font-size: 2.2rem; }
+
+.t-size24, .note__popup__title {
+  font-size: 2.4rem; }
+
+.t-size32 {
+  font-size: 3.2rem; }
+
+.t-size42 {
+  font-size: 4.2rem; }
+
+.t-size48 {
+  font-size: 4.8rem; }
+
+/* Type styles */
+.ts-h1 {
+  font-size: 4.2rem;
+  letter-spacing: -0.05rem;
+  font-weight: 500; }
+
+.ts-h2 {
+  font-size: 3.2rem;
+  letter-spacing: -0.05rem;
+  font-weight: 500; }
+
+.ts-h3 {
+  font-size: 2.5rem;
+  letter-spacing: -0.02rem;
+  font-weight: 500; }
+
+.ts-h4 {
+  font-size: 1.8rem;
+  line-height: 1.3;
+  letter-spacing: -0.026rem;
+  font-weight: 400;
+  margin-bottom: 1.2rem; }
+
+/* Color */
+.t-white {
+  color: white; }
+
+.t-black {
+  color: black; }
+
+.t-red {
+  color: #c02323; }
+
+.t-green {
+  color: #498958; }
+
+.t-grey, .note__link, .note__popup__count {
+  color: #7f8690; }
+
+.t-altGrey {
+  color: #9faab1; }
+
+.t-faded {
+  color: #c8c8c8; }
+
+.t-text {
+  color: #7f8690; }
+
+.t-primary {
+  color: #4d7bd5; }
+
+.t-grossisteThemePrimary, .note__popup__button {
+  color: var(--theme-primary); }
+
+.t-error {
+  color: #c02323 !important; }
+
+.t-success {
+  color: #498958 !important; }
+
+/* Weight */
+.t-light, .note__popup__title {
+  font-weight: 300; }
+
+.t-regular {
+  font-weight: 400; }
+
+.t-regular-i {
+  font-weight: 400 !important; }
+
+.t-medium {
+  font-weight: 500; }
+
+.t-bold {
+  font-weight: 700; }
+
+/* Alignment */
+.t-left {
+  text-align: left; }
+
+.t-center {
+  text-align: center; }
+
+.t-right {
+  text-align: right; }
+
+.t-heightFix {
+  height: 0.8em; }
+
+.t-heightFixAlt {
+  transform: translateY(0.2em); }
+
+/* Letter Spacing */
+.t-lsMinus1 {
+  letter-spacing: -0.01em; }
+
+.t-lsMinus2, .note__link, .note__popup__count {
+  letter-spacing: -0.02em; }
+
+/* Line Height */
+.t-lh08 {
+  line-height: 0.8; }
+
+.t-lh10 {
+  line-height: 1.0; }
+
+.t-lh11 {
+  line-height: 1.1; }
+
+.t-lh12 {
+  line-height: 1.2; }
+
+.t-lh13 {
+  line-height: 1.3; }
+
+.t-lh125 {
+  line-height: 1.25; }
+
+.t-lh14 {
+  line-height: 1.4; }
+
+.t-lh15 {
+  line-height: 1.5; }
+
+/* Height Fix */
+.t-heightFix {
+  height: 0.6em; }
+
+.t-heightFix2 {
+  height: 1.5em; }
+
+/* Styling */
+.t-currency {
+  white-space: nowrap; }
+
+.t-capital {
+  text-transform: capitalize; }
+
+.t-break, .note__text {
+  hyphens: auto;
+  word-break: break-word; }
+
+.wrap-normal {
+  white-space: normal; }
+
+.wrap-none {
+  white-space: nowrap; }
+
+/*!
+ * CERVE PROPRIETARY INFORMATION
+ *
+ * This software is confidential. Cerve, or one of its
+ * subsidiaries, has supplied this software to you under terms of a
+ * license agreement, nondisclosure agreement or both.
+ *
+ * You may not copy, disclose, or use this software except in accordance with
+ * those terms.
+ *
+ * Copyright (c) 2021 Cerve
+ * ALL RIGHTS RESERVED.
+ *
+ * CERVE MAKES NO REPRESENTATIONS OR
+ * WARRANTIES ABOUT THE SUITABILITY OF THE SOFTWARE,
+ * EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+ * TO THE IMPLIED WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE, OR
+ * NON-INFRINGEMENT. CERVE SHALL NOT BE
+ * LIABLE FOR ANY DAMAGES SUFFERED BY LICENSEE
+ * AS A RESULT OF USING, MODIFYING OR DISTRIBUTING
+ * THIS SOFTWARE OR ITS DERIVATIVES.
+ */
+body {
+  background: #fafafa; }
+
+#frame {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #eef2f4;
+  pointer-events: auto; }
+  #frame:before, #frame:after {
+    content: "";
+    position: absolute;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1; }
+  #frame:before {
+    background-image: url(https://cdn.cerve.com/ui/cabbage.png);
+    top: 0;
+    left: 0;
+    height: calc(7vw + 13.8rem);
+    width: calc(7vw + 13.8rem);
+    transform: translateX(-42%) translateY(-12%); }
+  #frame:after {
+    background-image: url(https://cdn.cerve.com/ui/bread.png);
+    bottom: 0;
+    right: 0;
+    height: calc(10vw + 20rem);
+    width: calc(10vw + 20rem);
+    transform: translateX(48%) translateY(35%); }
+
+#logos {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+  #logos:before, #logos:after {
+    content: "";
+    position: absolute;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1; }
+  #logos:before {
+    background-image: url(https://cdn.cerve.com/ui/logotype.svg);
+    top: 55px;
+    left: 50%;
+    width: 80px;
+    height: 18px;
+    transform: translate3d(-40%, -50%, 0); }
+  #logos:after {
+    background-image: url(https://cdn.cerve.com/ui/logo_altgrey.png);
+    bottom: 50px;
+    left: 50%;
+    width: 32px;
+    height: 32px;
+    transform: translate3d(-50%, 50%, 0); }
+
+.cerve-logo {
+  position: absolute;
+  z-index: 11;
+  top: 48px;
+  width: 100%;
+  text-align: center; }
+
+html,
+body {
+  pointer-events: none; }
+
+#root {
+  pointer-events: auto;
+  position: absolute;
+  width: 100%;
+  padding: 0;
+  top: 90px;
+  left: 50%;
+  transform: translate3d(-50%, 0, 0);
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 760px;
+  max-height: calc(100vh - 20px);
+  z-index: 10;
+  box-shadow: 3px 10px 40px -12px rgba(0, 0, 0, 0.25); }
+
+#loading {
+  position: fixed;
+  z-index: 10000;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 100ms linear; }
+  #loading .spinner {
+    position: absolute;
+    top: calc(50% - 1.4rem);
+    left: calc(50% - 1.4rem);
+    border-color: #d8d8d8 #d8d8d8 #d8d8d8 transparent; }
+
+.showLoading #loading {
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 200ms linear; }
+
+#viewport {
+  position: fixed;
+  overflow: hidden;
+  outline: none !important;
+  height: 100%;
+  width: 100%; }
+
+#scroll {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  outline: none; }
+  @media screen and (max-width: 599px) {
+    #scroll {
+      padding-right: 17px;
+      box-sizing: content-box; } }
+  #scroll > * {
+    max-width: 100%; }
+    @media screen and (max-width: 599px) {
+      #scroll > * {
+        max-width: 100vw; } }
+
+#content {
+  position: relative;
+  width: 100%;
+  min-height: 100%; }
+
+@media screen and (max-height: 940px) and (max-width: 599px) {
+  #logos {
+    display: none; }
+  #root {
+    top: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    max-height: calc(100vh - 130px); } }
+
+@media screen and (max-height: 760px) and (max-width: 599px) {
+  #root {
+    top: 0%;
+    transform: translate3d(-50%, 0, 0);
+    height: 100%;
+    max-height: 100%;
+    border-radius: 0; } }
+
+@media screen and (min-width: 600px) {
+  html,
+  body {
+    pointer-events: auto; }
+  #frame::after, #frame::before {
+    display: none; }
+  #root {
+    max-width: 1560px;
+    height: 100%;
+    max-height: 100%;
+    top: 0;
+    border-radius: 0; }
+  .container {
+    max-width: 1400px;
+    padding: 0 60px;
+    margin: 0 auto; }
+    .container--small {
+      max-width: 920px; } }
+
+@media screen and (min-width: 1400px) {
+  #frame {
+    background: #dce4e6; }
+  #root {
+    box-shadow: none; } }
+
+@media screen and (min-width: 600px) and (max-width: 1399px) {
+  .container {
+    padding: 0px; } }
+
+@media screen and (max-width: 599px) {
+  #frame:before, #frame:after {
+    display: none; }
+  #root {
+    height: 100%;
+    max-height: 100%;
+    border-radius: 0;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    transform: none;
+    padding-left: 0;
+    padding-right: 0; }
+  #loading {
+    width: 100vw; } }
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  #root {
+    height: 100% !important;
+    max-height: 100% !important; } }

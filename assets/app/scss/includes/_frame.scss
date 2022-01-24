@@ -1,0 +1,302 @@
+/*!
+ * CERVE PROPRIETARY INFORMATION
+ *
+ * This software is confidential. Cerve, or one of its
+ * subsidiaries, has supplied this software to you under terms of a
+ * license agreement, nondisclosure agreement or both.
+ *
+ * You may not copy, disclose, or use this software except in accordance with
+ * those terms.
+ *
+ * Copyright (c) 2021 Cerve
+ * ALL RIGHTS RESERVED.
+ *
+ * CERVE MAKES NO REPRESENTATIONS OR
+ * WARRANTIES ABOUT THE SUITABILITY OF THE SOFTWARE,
+ * EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+ * TO THE IMPLIED WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE, OR
+ * NON-INFRINGEMENT. CERVE SHALL NOT BE
+ * LIABLE FOR ANY DAMAGES SUFFERED BY LICENSEE
+ * AS A RESULT OF USING, MODIFYING OR DISTRIBUTING
+ * THIS SOFTWARE OR ITS DERIVATIVES.
+ */
+
+// Contains styles for the frame to display the app on desktop
+
+body {
+  background: #fafafa;
+}
+
+#frame {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: $bg-gray;
+  pointer-events: auto;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+
+  &:before {
+    background-image: url(https://cdn.cerve.com/ui/cabbage.png);
+    top: 0;
+    left: 0;
+    height: calc(7vw + 13.8rem);
+    width: calc(7vw + 13.8rem);
+    transform: translateX(-42%) translateY(-12%);
+  }
+
+  &:after {
+    background-image: url(https://cdn.cerve.com/ui/bread.png);
+    bottom: 0;
+    right: 0;
+    height: calc(10vw + 20rem);
+    width: calc(10vw + 20rem);
+    transform: translateX(48%) translateY(35%);
+  }
+}
+
+#logos {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+
+  &:before {
+    background-image: url(https://cdn.cerve.com/ui/logotype.svg);
+    top: 55px;
+    left: 50%;
+    width: 80px;
+    height: 18px;
+    transform: translate3d(-40%, -50%, 0);
+  }
+
+  &:after {
+    background-image: url(https://cdn.cerve.com/ui/logo_altgrey.png);
+    bottom: 50px;
+    left: 50%;
+    width: 32px;
+    height: 32px;
+    transform: translate3d(-50%, 50%, 0);
+  }
+}
+
+.cerve-logo {
+  position: absolute;
+  z-index: 11;
+  top: 48px;
+  width: 100%;
+  text-align: center;
+}
+
+html,
+body {
+  pointer-events: none;
+}
+
+#root {
+  pointer-events: auto;
+  position: absolute;
+  width: $frame-width;
+  padding: 0;
+  top: 90px;
+  left: 50%;
+  transform: translate3d(-50%, 0, 0);
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  height: $frame-height;
+  max-height: calc(100vh - 20px);
+  z-index: 10;
+  box-shadow: 3px 10px 40px -12px rgba(0, 0, 0, 0.25);
+}
+
+#loading {
+  position: fixed;
+
+  z-index: 10000;
+  width: $frame-width;
+  height: 100%;
+  background: rgba(black, 0.6);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 100ms linear;
+
+  .spinner {
+    position: absolute;
+    top: calc(50% - 1.4rem);
+    left: calc(50% - 1.4rem);
+    border-color: $spinner-gray $spinner-gray $spinner-gray transparent;
+  }
+}
+
+.showLoading #loading {
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 200ms linear;
+}
+
+#viewport {
+  position: fixed;
+  overflow: hidden;
+  outline: none !important;
+  height: 100%;
+  width: 100%;
+}
+
+#scroll {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  outline: none;
+  @include mobile {
+    padding-right: 17px;
+    box-sizing: content-box;
+  }
+  & > * {
+    max-width: $frame-width;
+    @include mobile {
+      max-width: 100vw;
+    }
+  }
+}
+
+#content {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+}
+
+@media screen and (max-height: $frame-height + 180px) {
+  @include mobile {
+    #logos {
+      display: none;
+    }
+
+    #root {
+      top: 50%;
+      transform: translate3d(-50%, -50%, 0);
+      max-height: calc(100vh - 130px);
+    }
+  }
+}
+
+@media screen and (max-height: $frame-height) {
+  @include mobile {
+    #root {
+      top: 0%;
+      transform: translate3d(-50%, 0, 0);
+      height: 100%;
+      max-height: 100%;
+      border-radius: 0;
+    }
+  }
+}
+
+@include desktop {
+  html,
+  body {
+    pointer-events: auto;
+  }
+
+  #frame {
+    &::after,
+    &::before {
+      display: none;
+    }
+  }
+
+  #root {
+    max-width: 1560px;
+    height: 100%;
+    max-height: 100%;
+    top: 0;
+    border-radius: 0;
+  }
+
+  .container {
+    max-width: 1400px;
+    padding: 0 60px;
+    margin: 0 auto;
+
+    &--small {
+      max-width: 920px;
+    }
+  }
+}
+
+@include desktop-min {
+  #frame {
+    background: #dce4e6;
+  }
+
+  #root {
+    box-shadow: none;
+  }
+}
+
+@include tablet-only {
+  .container {
+    padding: 0px;
+  }
+}
+
+@include mobile {
+  #frame {
+    &:before,
+    &:after {
+      display: none;
+    }
+  }
+  #root {
+    height: 100%;
+    max-height: 100%;
+    border-radius: 0;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    transform: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #loading {
+    width: 100vw;
+  }
+  // #viewport, #frame, #root{
+  //   position: static;
+  //   transform: none;
+  // }
+  // #scroll{
+  //   transform: translate3d(0,0,0);
+  // }
+}
+
+@include iphonex {
+  #root {
+    height: 100% !important;
+    max-height: 100% !important;
+  }
+}

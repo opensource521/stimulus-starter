@@ -1,0 +1,37 @@
+/*!
+ * CERVE PROPRIETARY INFORMATION
+ *
+ * This software is confidential. Cerve, or one of its
+ * subsidiaries, has supplied this software to you under terms of a
+ * license agreement, nondisclosure agreement or both.
+ *
+ * You may not copy, disclose, or use this software except in accordance with
+ * those terms.
+ *
+ * Copyright (c) 2021 Cerve
+ * ALL RIGHTS RESERVED.
+ *
+ * CERVE MAKES NO REPRESENTATIONS OR
+ * WARRANTIES ABOUT THE SUITABILITY OF THE SOFTWARE,
+ * EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+ * TO THE IMPLIED WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE, OR
+ * NON-INFRINGEMENT. CERVE SHALL NOT BE
+ * LIABLE FOR ANY DAMAGES SUFFERED BY LICENSEE
+ * AS A RESULT OF USING, MODIFYING OR DISTRIBUTING
+ * THIS SOFTWARE OR ITS DERIVATIVES.
+ */
+
+// Contains variables for timings and easings of animations / transitions
+// EASINGS
+$ease-in-out: cubic-bezier(0.770, 0.000, 0.175, 1.000); /* easeInOutQuart */
+$ease-out: cubic-bezier(0.165, 0.840, 0.440, 1.000); /* easeOutQuart */
+$ease-in: cubic-bezier(0.550, 0.055, 0.675, 0.190); /* easeInCubic */
+
+// TIMES
+$t: 20ms;
+
+$t-fast: $t * 5;
+$t-short: $t * 11;
+$t-mid: $t * 16;
+$t-long: $t * 20;

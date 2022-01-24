@@ -1,0 +1,123 @@
+{{ $images := .images }}
+{{ $icons := .icons }}
+{{ $products := .products }}
+{{ $images := .images }}
+{{ $icons := .icons }}
+{{ $products := .products }}
+
+<div class="container">
+	<div class="u-flexColumn navbar" data-controller="navbar"
+		data-navbar-scrolled-class="scrolled"
+		data-target="navbar.main"
+	>
+		<div class="navbar--logo">
+			<div style="padding: 15px 0;">
+				<img src="public/images/profile.png" style="width: 32px;"/>
+			</div>
+			<div class="title">
+				<h3>Odd Langdalen</h3>
+				<span>Rabekkgata 9, Moss</span>
+			</div>
+			<div style="padding: 15px 0;">
+				<span class="search-icon">
+					<img src="public/images/ui/search_icon.svg" />
+				</span>
+			</div>
+		</div>
+		<div class="u-flexColumn u-hPadStandard">
+			<img src="public/images/logo-image.png" class="logo-text" />
+			<h1>Odd Langdalen</h1>
+			<h4 style="color: grey;">Rabekkgata 9, Moss</h4>
+		</div>
+	</div>
+	<div id="products-content" class="u-tPad40">
+		<div class="horizontalScroll u-flexColumn navbar--product--category" data-controller="hscroll">
+			<div class="u-flexEdges horizontalScroll__track-header" style="pointer-events: auto;">
+				<h1>Oil</h1>
+				<a class="iconButton" data-action="click->hscroll#scrollToNextPage" href="javascript:;">
+					<span><img src="public/images/ui/chevron_right_black.svg" /></span>
+				</a>
+			</div>
+			<div class="horizontalScroll__track u-desktophPad0 u-tablet-lPad62 u-hPadStandard u-desktop-overflow-x" body-scroll-lock-ignore data-action="mousedown->hscroll#beginscroll mousemove->hscroll#moveScroll mouseup->hscroll#endScroll mouseleave->hscroll#endScroll touchstart->hscroll#beginTouch touchmove->hscroll#moveTouch touchend->hscroll#endTouch" data-target="hscroll.track">
+				{{ range $i, $product := $products }}
+				<div class="hScroll__card ">
+					<div class="u-relative u-mb15 u-desktop-mb8 u-flexColumn">
+						<div class="image image--productLarge">
+							<img class="image__inner image__inner--product{{ if $product.OutOfStock }} image__disabled{{ end }}" loading="auto" width="110" height="117" data-src="{{ $product.ImageURL }}" />
+						</div>
+						<span>Product {{$i}}</span>
+						<span style="color: gray;">{{$i}} kr</span>
+					</div>
+				</div>
+				{{ end }}
+			</div>
+		</div>
+
+
+		<div class="horizontalScroll u-flexColumn navbar--product--category" data-controller="hscroll">
+			<div class="u-flexEdges horizontalScroll__track-header" style="pointer-events: auto;">
+				<h1>Meat</h1>
+				<a class="iconButton" data-action="click->hscroll#scrollToNextPage" href="javascript:;">
+					<span><img src="public/images/ui/chevron_right_black.svg" /></span>
+				</a>
+			</div>
+			<div class="horizontalScroll__track u-desktophPad0 u-tablet-lPad62 u-hPadStandard u-desktop-overflow-x" body-scroll-lock-ignore data-action="mousedown->hscroll#beginscroll mousemove->hscroll#moveScroll mouseup->hscroll#endScroll mouseleave->hscroll#endScroll touchstart->hscroll#beginTouch touchmove->hscroll#moveTouch touchend->hscroll#endTouch" data-target="hscroll.track">
+				{{ range $i, $product := $products }}
+				<div class="hScroll__card ">
+					<div class="u-relative u-mb15 u-desktop-mb8 u-flexColumn">
+						<div class="image image--productLarge">
+							<img class="image__inner image__inner--product{{ if $product.OutOfStock }} image__disabled{{ end }}" loading="auto" width="110" height="117" data-src="{{ $product.ImageURL }}" />
+						</div>
+						<span>Product {{$i}}</span>
+						<span style="color: gray;">{{$i}} kr</span>
+					</div>
+				</div>
+				{{ end }}
+			</div>
+		</div>
+
+		<div class="horizontalScroll u-flexColumn navbar--product--category" data-controller="hscroll">
+			<div class="u-flexEdges horizontalScroll__track-header" style="pointer-events: auto;">
+				<h1>Snacks</h1>
+				<a class="iconButton" data-action="click->hscroll#scrollToNextPage" href="javascript:;">
+					<span><img src="public/images/ui/chevron_right_black.svg" /></span>
+				</a>
+			</div>
+			<div class="horizontalScroll__track u-desktophPad0 u-tablet-lPad62 u-hPadStandard u-desktop-overflow-x" body-scroll-lock-ignore data-action="mousedown->hscroll#beginscroll mousemove->hscroll#moveScroll mouseup->hscroll#endScroll mouseleave->hscroll#endScroll touchstart->hscroll#beginTouch touchmove->hscroll#moveTouch touchend->hscroll#endTouch" data-target="hscroll.track">
+				{{ range $i, $product := $products }}
+				<div class="hScroll__card ">
+					<div class="u-relative u-mb15 u-desktop-mb8 u-flexColumn">
+						<div class="image image--productLarge">
+							<img class="image__inner image__inner--product{{ if $product.OutOfStock }} image__disabled{{ end }}" loading="auto" width="110" height="117" data-src="{{ $product.ImageURL }}" />
+						</div>
+						<span>Product {{$i}}</span>
+						<span style="color: gray;">{{$i}} kr</span>
+					</div>
+				</div>
+				{{ end }}
+			</div>
+		</div>
+
+		<div class="horizontalScroll u-flexColumn navbar--product--category" data-controller="hscroll">
+			<div class="u-flexEdges horizontalScroll__track-header" style="pointer-events: auto;">
+				<h1>Vegetables</h1>
+				<a class="iconButton" data-action="click->hscroll#scrollToNextPage" href="javascript:;">
+					<span><img src="public/images/ui/chevron_right_black.svg" /></span>
+				</a>
+			</div>
+			<div class="horizontalScroll__track u-desktophPad0 u-tablet-lPad62 u-hPadStandard u-desktop-overflow-x" body-scroll-lock-ignore data-action="mousedown->hscroll#beginscroll mousemove->hscroll#moveScroll mouseup->hscroll#endScroll mouseleave->hscroll#endScroll touchstart->hscroll#beginTouch touchmove->hscroll#moveTouch touchend->hscroll#endTouch" data-target="hscroll.track">
+				{{ range $i, $product := $products }}
+				<div class="hScroll__card ">
+					<div class="u-relative u-mb15 u-desktop-mb8 u-flexColumn">
+						<div class="image image--productLarge">
+							<img class="image__inner image__inner--product{{ if $product.OutOfStock }} image__disabled{{ end }}" loading="auto" width="110" height="117" data-src="{{ $product.ImageURL }}" />
+						</div>
+						<span>Product {{$i}}</span>
+						<span style="color: gray;">{{$i}} kr</span>
+					</div>
+				</div>
+				{{ end }}
+			</div>
+		</div>
+	</div>
+</div>

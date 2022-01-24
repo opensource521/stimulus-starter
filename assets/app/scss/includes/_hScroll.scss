@@ -1,0 +1,340 @@
+/*!
+ * CERVE PROPRIETARY INFORMATION
+ *
+ * This software is confidential. Cerve, or one of its
+ * subsidiaries, has supplied this software to you under terms of a
+ * license agreement, nondisclosure agreement or both.
+ *
+ * You may not copy, disclose, or use this software except in accordance with
+ * those terms.
+ *
+ * Copyright (c) 2021 Cerve
+ * ALL RIGHTS RESERVED.
+ *
+ * CERVE MAKES NO REPRESENTATIONS OR
+ * WARRANTIES ABOUT THE SUITABILITY OF THE SOFTWARE,
+ * EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+ * TO THE IMPLIED WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE, OR
+ * NON-INFRINGEMENT. CERVE SHALL NOT BE
+ * LIABLE FOR ANY DAMAGES SUFFERED BY LICENSEE
+ * AS A RESULT OF USING, MODIFYING OR DISTRIBUTING
+ * THIS SOFTWARE OR ITS DERIVATIVES.
+ */
+
+.note {
+  &__title {
+    @extend .t-size17;
+  }
+  &__link {
+    @extend .t-grey;
+    @extend .t-size12;
+    @extend .t-lsMinus2;
+  }
+  &__text {
+    @extend .t-size14;
+    @extend .t-break;
+  }
+
+  &__popup {
+    &__title {
+      @extend .t-size24;
+      @extend .t-light;
+    }
+
+    &__textField {
+      @extend .textField;
+      @extend .textField--textarea;
+      @extend .t-size14;
+    }
+
+    &__count {
+      @extend .t-grey;
+      @extend .t-size12;
+      @extend .t-lsMinus2;
+
+      &--frame {
+        @extend .t-size14;
+
+        text-align: left;
+        padding-top: 1.4rem;
+        padding-bottom: 0.9rem;
+        margin-top: -1px;
+        border: 1px solid $text-field-gray;
+        border-bottom-right-radius: 6px;
+        border-bottom-left-radius: 6px;
+      }
+    }
+
+    &__button {
+      @extend .button;
+      @extend .button--light;
+      @extend .t-grossisteThemePrimary;
+      @extend .u-fullWidth;
+    }
+  }
+}
+
+/*!
+ * CERVE PROPRIETARY INFORMATION
+ *
+ * This software is confidential. Cerve, or one of its
+ * subsidiaries, has supplied this software to you under terms of a
+ * license agreement, nondisclosure agreement or both.
+ *
+ * You may not copy, disclose, or use this software except in accordance with
+ * those terms.
+ *
+ * Copyright (c) 2021 Cerve
+ * ALL RIGHTS RESERVED.
+ *
+ * CERVE MAKES NO REPRESENTATIONS OR
+ * WARRANTIES ABOUT THE SUITABILITY OF THE SOFTWARE,
+ * EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+ * TO THE IMPLIED WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE, OR
+ * NON-INFRINGEMENT. CERVE SHALL NOT BE
+ * LIABLE FOR ANY DAMAGES SUFFERED BY LICENSEE
+ * AS A RESULT OF USING, MODIFYING OR DISTRIBUTING
+ * THIS SOFTWARE OR ITS DERIVATIVES.
+ */
+
+.navbar {
+  padding-bottom: 5px;
+  border-bottom: 1.2px solid #80808012;
+  &--logo {
+    background-image: url('/public/images/header-image.jpeg'); 
+    background-repeat: no-repeat; 
+    background-size: contain;
+    width: 100%; 
+    height: 0;
+    padding-left: 2.8rem;
+    padding-right: 2.8rem;
+    padding-bottom: 53.333%;
+    display: flex;
+    justify-content: space-between;
+
+    .title {
+      display: none;
+    }
+  }
+  .logo-text {
+    width: 85px; 
+    margin-top: -50px; 
+    margin-bottom: 20px;
+  }
+}
+.navbar.scrolled {
+  margin-bottom: 250px;
+  .navbar--logo {
+    transition: all 0s, opacity 0.5s linear;
+    background: rgb(212, 102, 37);
+		width: 100%; 
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    padding: 0 2.8rem;
+    z-index: 99;
+    .title {
+      display: block;
+      text-align: center;
+      h3 {
+        color: white;
+      }
+      span {
+        color: #bbb5b5;
+        font-size: 11px;
+      }
+    }
+  }
+}
+
+.navbar--logo .search-icon {
+  border-radius: 50%; background: rgba(0,0,0,0.3); padding: 6px 8px;
+}
+
+.navbar--product--category {
+  margin-top: 40px; 
+}
+
+//Js scrolling version
+.hScroll {
+  touch-action: manipulation;
+  width: 100%;
+  &__track{
+    width: 100%;
+    white-space: nowrap;
+    pointer-events: none;
+    transition: transform $t*5 $ease-out;
+    -webkit-overflow-scrolling: touch;
+    padding-left: 2.8rem;
+    padding-right: 15rem;
+    & > * {
+      display: inline-block;
+      vertical-align: top;
+      white-space: normal;
+    }
+  }
+  &__card{
+    margin-right: 20px;
+    pointer-events: auto;
+    display: inline-block;
+    vertical-align: top;
+    width: 11.7rem;
+    //user-drag: none;
+    //-webkit-user-drag: none;
+    
+    &--narrow{
+      width: 6.5rem;
+    }
+    &--close{
+      margin-right: 12px;
+    }
+    &--far{
+      margin-right: 36px;
+    }
+    &--auto{
+      width: auto;
+    }
+  }
+  &__progressBar{
+    height: 2px;
+    width: 100%;
+    overflow: hidden;
+    background: $gray;
+  }
+  &__progressInner{
+    height: 100%;
+    background: black;
+    width: 10%;
+    transform: translateX(0);
+    transform-origin: left center;
+  }
+  &--grid{
+    display: flex;
+    flex-wrap: wrap;
+    transform: translate3d(0,0,0);
+    & > *{
+      max-width: 30%;
+      min-width: 30%;
+      margin: 0 5% 4rem 0;
+    }
+    & > *:nth-child(3n){
+      margin-right: 0;
+    }
+  }
+}
+
+
+// Standard scrolling version
+.horizontalScroll {
+  overflow: hidden;
+  transform: translate3d(0,0,0);
+
+  &__track-header {
+    padding: 0 0 2rem 2.8rem;
+    margin-bottom: 20px;
+  }
+  
+  &__track{
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    padding-top:1px;
+    padding-bottom: 51px;
+    margin-bottom: -50px;
+    transform: translate3d(0,0,0);
+    transition: all 0s, opacity 0.5s linear;
+    // & > *:nth-child(n+5){
+    //   display: none;
+    // }
+  }
+
+  &--fixedHeight {
+    height: 230px !important;
+  }
+}
+
+@include desktop-min {
+  .horizontalScroll__track {
+    overflow: hidden;
+  }
+}
+
+@include desktop {
+  .hScroll {
+    &__card:not(.hScroll__card--far):not(.hScroll__card--narrow):not(.hScroll__card--checkout) {
+      width: 13.8rem;
+      margin-right: 25px;
+    }
+
+    &--grid {
+      & > * {
+        min-width: 0;
+        width: 13.8rem;
+        margin-right: 25px;
+      }
+
+      & > *:nth-child(3n){
+        margin-right: 25px;
+      }
+
+      & > *:nth-child(8n) {
+        margin-right: 0;
+      }
+
+      &-small {
+        & > *:nth-child(8n) {
+          margin-right: 25px;
+        }
+
+        & > *:nth-child(5n) {
+          margin-right: 0px;
+        }
+      }
+    }
+  }
+
+  .horizontalScroll {
+    &--fixedHeight {
+      height: 280px !important;
+    }
+
+    &__track {
+      // overflow: hidden;
+      transition: all 0s, opacity 0.5s linear;
+    }
+  }
+}
+
+@include tablet-only {
+  .hScroll {
+    &__card:not(.hScroll__card--far):not(.hScroll__card--narrow):not(.hScroll__card--checkout) {
+      width: 12.8rem;
+      margin-right: 22px;
+
+      .image--category {
+        width: 100%;
+      }
+    }
+
+    &--grid {
+      display: grid;
+      grid-column-gap: 22px;
+      grid-template-columns: repeat(auto-fill, 12.8rem);
+      justify-content: space-between;
+
+      & > * {
+        max-width: 100%;
+        min-width: 0;
+        width: 12.8rem;
+        margin-right: 22px !important;
+        margin-left: 0px !important;
+      }
+    }
+  }
+}

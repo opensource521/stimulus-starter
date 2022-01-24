@@ -1,0 +1,109 @@
+/*!
+ * CERVE PROPRIETARY INFORMATION
+ *
+ * This software is confidential. Cerve, or one of its
+ * subsidiaries, has supplied this software to you under terms of a
+ * license agreement, nondisclosure agreement or both.
+ *
+ * You may not copy, disclose, or use this software except in accordance with
+ * those terms.
+ *
+ * Copyright (c) 2021 Cerve
+ * ALL RIGHTS RESERVED.
+ *
+ * CERVE MAKES NO REPRESENTATIONS OR
+ * WARRANTIES ABOUT THE SUITABILITY OF THE SOFTWARE,
+ * EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+ * TO THE IMPLIED WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE, OR
+ * NON-INFRINGEMENT. CERVE SHALL NOT BE
+ * LIABLE FOR ANY DAMAGES SUFFERED BY LICENSEE
+ * AS A RESULT OF USING, MODIFYING OR DISTRIBUTING
+ * THIS SOFTWARE OR ITS DERIVATIVES.
+ */
+
+ $desktop-width: 800px;
+ $tablet-width: 600px;
+ $content-width: $desktop-width * 0.92;
+ $frame-width: 100%;
+ $frame-width-mobile: 519px;
+ $frame-height: 760px;
+ 
+ @mixin transform ($transform) {
+   -webkit-transform: $transform;
+   -moz-transform: $transform;
+   -ms-transform: $transform;
+   -o-transform: $transform;
+   transform: $transform;
+ }
+ 
+ @mixin desktop {
+   @media screen and (min-width: $tablet-width) {
+     @content;
+   }
+ }
+ 
+ @mixin desktop-min {
+   @media screen and (min-width: ($desktop-width + 600px)) {
+     @content;
+   }
+ }
+ 
+ @mixin tablet-only {
+   @media screen and (min-width: $tablet-width) and (max-width: ($desktop-width + 599px)) {
+     @content;
+   }
+ }
+ 
+ @mixin tablet-min {
+   @media screen and (min-width: $tablet-width) {
+     @content;
+   }
+ }
+ 
+ @mixin tablet-max {
+   @media screen and (max-width: ($desktop-width + 599px)) {
+     @content;
+   }
+ }
+ 
+ @mixin mobile {
+   @media screen and (max-width: ($frame-width-mobile + 80px)) {
+     @content;
+   }
+ }
+ 
+ @mixin not-mobile {
+   @media screen and (min-width: ($frame-width-mobile + 80px)) {
+     @content;
+   }
+ }
+ 
+ /* iPad portrait */
+ @mixin ipad-portrait {
+   @media screen and (min-width: ($frame-width-mobile + 81px)) and (max-width: 768px) {
+     @content
+   }
+ }
+ 
+ /* iPhone X */
+ @mixin iphonex {
+   /* Portrait and Landscape */
+   @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+     @content
+   }
+ }
+ 
+ @mixin iphonex-portrait {
+   /* Portrait */
+   @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+     @content
+   }
+ }
+ 
+ @mixin iphonex-landscape {
+   /* Landscape */
+   @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+     @content
+   }
+ }

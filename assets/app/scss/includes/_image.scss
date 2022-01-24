@@ -1,0 +1,234 @@
+/*!
+ * CERVE PROPRIETARY INFORMATION
+ *
+ * This software is confidential. Cerve, or one of its
+ * subsidiaries, has supplied this software to you under terms of a
+ * license agreement, nondisclosure agreement or both.
+ *
+ * You may not copy, disclose, or use this software except in accordance with
+ * those terms.
+ *
+ * Copyright (c) 2021 Cerve
+ * ALL RIGHTS RESERVED.
+ *
+ * CERVE MAKES NO REPRESENTATIONS OR
+ * WARRANTIES ABOUT THE SUITABILITY OF THE SOFTWARE,
+ * EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+ * TO THE IMPLIED WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE, OR
+ * NON-INFRINGEMENT. CERVE SHALL NOT BE
+ * LIABLE FOR ANY DAMAGES SUFFERED BY LICENSEE
+ * AS A RESULT OF USING, MODIFYING OR DISTRIBUTING
+ * THIS SOFTWARE OR ITS DERIVATIVES.
+ */
+
+.image {
+  $image: &;
+
+  position: relative;
+
+  &__inner {
+    width: 100%;
+    min-width: 100%;
+    min-height: 102%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: auto;
+    position: relative;
+    z-index: 2;
+  }
+
+  &__disabled {
+    opacity: 0.4 !important;
+  }
+
+  &__inner {
+    &--product {
+      background-size: auto 100%;
+      background-position: center;
+    }
+  }
+
+  &__select {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    transform: scale(0);
+    z-index: 1;
+    transition: transform $t-mid $ease-in-out;
+  }
+
+  &--selected &__select {
+    transform: scale(1);
+  }
+
+  &--mapPin {
+    width: 3.6rem;
+    height: 3.6rem;
+    border-radius: 100%;
+
+    :checked + &--checkbox #{$image}__inner {
+      background-image: url(https://cdn.cerve.com/ui/checkmark.svg) !important;
+    }
+  }
+
+  &--avatar,
+  &--cerve {
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 100%;
+  }
+
+  &--avatarLarge {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 100%;
+  }
+
+  &--avatar &__inner {
+    border-radius: 100%;
+    background: white;
+  }
+
+  &--productFull {
+    width: 15.5rem;
+    height: 15.5rem;
+  }
+
+  &--productList {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  &--productLarge {
+    margin: auto auto 20px auto;
+    width: 11rem;
+    height: 11rem;
+  }
+
+  &--productGrid {
+    margin: auto;
+    width: 9rem;
+    height: 9rem;
+  }
+
+  &--storeList {
+    width: 3.6rem;
+    height: 3.6rem;
+  }
+
+  &--productMedium {
+    width: 5.5rem;
+    height: 5.5rem;
+  }
+
+  &--productSmall {
+    border-radius: 100%;
+  }
+
+  &--category {
+    overflow: hidden;
+    border-radius: 1.6rem;
+    width: 14rem;
+    height: 16.8rem;
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+  }
+
+  &--category &__inner {
+    background-color: $off-white;
+  }
+
+  &--category &__img {
+    position: absolute;
+    bottom: -3.25rem;
+    right: -2.5rem;
+    width: 100%;
+    transform: rotate(0deg);
+  }
+
+  &--delivery {
+    border-radius: 100%;
+    width: 6rem;
+    height: 6rem;
+  }
+
+  &--deliverySmall,
+  &--review {
+    border-radius: 100%;
+    width: 2rem;
+    height: 2rem;
+    min-width: 2rem;
+    min-height: 2rem;
+    max-width: 2rem;
+    max-height: 2rem;
+  }
+
+  &--delivery,
+  &--deliverySmall {
+    background-color: $image-bg-gray;
+  }
+
+  &--delivery::after {
+    content: "";
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    width: calc(100% + 8px);
+    height: calc(100% + 8px);
+    border-radius: 100%;
+    border: 2px solid transparent;
+    transition: border $t * 11 linear;
+  }
+
+  &--selected &--delivery::after {
+    border-color: $selected-gray;
+  }
+
+  &--header {
+    width: 100%;
+    height: 24rem;
+    margin-top: -2rem;
+    margin-bottom: 1.2rem;
+
+    .image__inner {
+      background-size: cover;
+      background-position: 50% 0%;
+    }
+
+    &-contain {
+      margin-top: -3.2rem;
+
+      .image__inner {
+        background-size: contain;
+        background-color: #edf1f4;
+      }
+    }
+  }
+}
+
+@include tablet-min {
+  .image {
+    &--productLarge,
+    &--productGrid {
+      width: 12.8rem;
+      height: 12.8rem;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@include desktop-min {
+  .image {
+    &--productLarge,
+    &--productGrid {
+      width: 13.8rem;
+      height: 13.8rem;
+      margin-bottom: 10px;
+    }
+  }
+}

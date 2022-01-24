@@ -1,0 +1,236 @@
+/*!
+ * CERVE PROPRIETARY INFORMATION
+ *
+ * This software is confidential. Cerve, or one of its
+ * subsidiaries, has supplied this software to you under terms of a
+ * license agreement, nondisclosure agreement or both.
+ *
+ * You may not copy, disclose, or use this software except in accordance with
+ * those terms.
+ *
+ * Copyright (c) 2021 Cerve
+ * ALL RIGHTS RESERVED.
+ *
+ * CERVE MAKES NO REPRESENTATIONS OR
+ * WARRANTIES ABOUT THE SUITABILITY OF THE SOFTWARE,
+ * EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+ * TO THE IMPLIED WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE, OR
+ * NON-INFRINGEMENT. CERVE SHALL NOT BE
+ * LIABLE FOR ANY DAMAGES SUFFERED BY LICENSEE
+ * AS A RESULT OF USING, MODIFYING OR DISTRIBUTING
+ * THIS SOFTWARE OR ITS DERIVATIVES.
+ */
+
+.icon {
+  display: block;
+  width: 100%;
+  height: 100% !important;
+  height: -webkit-fill-available;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  background-color: currentColor;
+}
+
+.icon-search {
+  @extend .icon;
+  padding: 8px;
+  -webkit-mask-image: url(https://cdn.cerve.com/ui/search_icon_16x16.svg);
+  mask-image: url(https://cdn.cerve.com/ui/search_icon_16x16.svg);
+}
+
+.icon-visible {
+  @extend .icon;
+  -webkit-mask-image: url(https://cdn.cerve.com/ui/visible_icon.svg);
+  mask-image: url(https://cdn.cerve.com/ui/visible_icon.svg);
+}
+
+.icon-eye {
+  @extend .icon;
+  -webkit-mask-image: url(https://cdn.cerve.com/ui/view.svg);
+  mask-image: url(https://cdn.cerve.com/ui/view.svg);
+  -webkit-mask-size: 18px auto;
+
+  &--hidden {
+    -webkit-mask-image: url(https://cdn.cerve.com/ui/view--off.svg);
+    mask-image: url(https://cdn.cerve.com/ui/view--off.svg);
+  }
+}
+
+.icon-renew {
+  @extend .icon;
+  -webkit-mask-image: url(https://cdn.cerve.com/ui/renew.svg);
+  mask-image: url(https://cdn.cerve.com/ui/renew.svg);
+  -webkit-mask-size: 15px auto;
+}
+
+.icon-edit {
+  @extend .icon;
+  -webkit-mask-image: url(https://cdn.cerve.com/ui/edit.svg);
+  mask-image: url(https://cdn.cerve.com/ui/edit.svg);
+  -webkit-mask-size: 15px auto;
+}
+
+.icon-save {
+  @extend .icon;
+  -webkit-mask-image: url(https://cdn.cerve.com/ui/save.svg);
+  mask-image: url(https://cdn.cerve.com/ui/save.svg);
+  -webkit-mask-size: 17px auto;
+}
+
+.icon-link {
+  @extend .icon;
+  -webkit-mask-image: url(https://cdn.cerve.com/ui/link.svg);
+  mask-image: url(https://cdn.cerve.com/ui/link.svg);
+  -webkit-mask-size: 18px auto;
+
+  &--off {
+    -webkit-mask-image: url(https://cdn.cerve.com/ui/unlink.svg);
+    mask-image: url(https://cdn.cerve.com/ui/unlink.svg);
+  }
+}
+
+.icon-hidden {
+  @extend .icon;
+  -webkit-mask-image: url(https://cdn.cerve.com/ui/hidden_icon.svg);
+  mask-image: url(https://cdn.cerve.com/ui/hidden_icon.svg);
+}
+
+.icon-star {
+  @extend .icon;
+  -webkit-mask-image: url(https://cdn.cerve.com/ui/star.svg);
+  mask-image: url(https://cdn.cerve.com/ui/star.svg);
+  -webkit-mask-size: 18px auto;
+
+  &--filled {
+    -webkit-mask-image: url(https://cdn.cerve.com/ui/star--filled.svg);
+    mask-image: url(https://cdn.cerve.com/ui/star--filled.svg);
+  }
+}
+
+.icon-instock {
+  @extend .icon;
+  -webkit-mask-image: url(https://cdn.cerve.com/ui/instock_icon.svg);
+  mask-image: url(https://cdn.cerve.com/ui/instock_icon.svg);
+  -webkit-mask-size: 18px auto;
+}
+
+.icon-outofstock {
+  @extend .icon;
+  -webkit-mask-image: url(https://cdn.cerve.com/ui/outofstock_icon.svg);
+  mask-image: url(https://cdn.cerve.com/ui/outofstock_icon.svg);
+  -webkit-mask-size: 18px auto;
+}
+
+.icon-warning {
+  @extend .icon;
+  -webkit-mask-image: url(https://cdn.cerve.com/ui/warning_icon.svg);
+  mask-image: url(https://cdn.cerve.com/ui/warning_icon.svg);
+}
+
+.icon-plus {
+  @extend .icon;
+  -webkit-mask-image: url(https://cdn.cerve.com/ui/product_plus_icon.svg);
+  mask-image: url(https://cdn.cerve.com/ui/product_plus_icon.svg);
+}
+
+.icon-minus {
+  @extend .icon;
+  -webkit-mask-image: url(https://cdn.cerve.com/ui/product_minus_icon.svg);
+  mask-image: url(https://cdn.cerve.com/ui/product_minus_icon.svg);
+}
+
+.icon-left-chevron {
+  @extend .icon;
+  -webkit-mask-image: url(https://cdn.cerve.com/ui/chevron_left_black.svg);
+  mask-image: url(https://cdn.cerve.com/ui/chevron_left_black.svg);
+}
+
+.icon-right-chevron {
+  @extend .icon;
+  -webkit-mask-image: url(https://cdn.cerve.com/ui/chevron_right_black.svg);
+  mask-image: url(https://cdn.cerve.com/ui/chevron_right_black.svg);
+}
+
+.icon-product-delivery {
+  @extend .icon;
+  display: inline-block;
+  height: 14px !important;
+  width: 14px !important;
+  -webkit-mask-image: url(https://cdn.cerve.com/ui/product_delivery_icon.svg);
+  mask-image: url(https://cdn.cerve.com/ui/product_delivery_icon.svg);
+}
+
+.icon-product-delivery-small {
+  @extend .icon;
+  display: inline-block;
+  height: 10px !important;
+  width: 10px !important;
+  -webkit-mask-image: url(https://cdn.cerve.com/ui/product_delivery_small_icon.svg);
+  mask-image: url(https://cdn.cerve.com/ui/product_delivery_small_icon.svg);
+}
+
+.icon-trashcan {
+  @extend .icon;
+  -webkit-mask-image: url(https://cdn.cerve.com/ui/trashcan_icon.svg);
+  mask-image: url(https://cdn.cerve.com/ui/trashcan_icon.svg);
+  -webkit-mask-size: 14px auto;
+}
+
+.icon-view {
+  @extend .icon;
+  -webkit-mask-image: url(https://cdn.cerve.com/ui/view.svg);
+  mask-image: url(https://cdn.cerve.com/ui/view.svg);
+  -webkit-mask-size: 20px auto;
+
+  &--off {
+    -webkit-mask-image: url(https://cdn.cerve.com/ui/view--off.svg);
+    mask-image: url(https://cdn.cerve.com/ui/view--off.svg);
+  }
+}
+
+.icon-close {
+  @extend .icon;
+  -webkit-mask-image: url(https://cdn.cerve.com/ui/close--outline.svg);
+  mask-image: url(https://cdn.cerve.com/ui/close--outline.svg);
+  -webkit-mask-size: 16px auto;
+  height: 16px !important;
+  width: 16px !important;
+}
+
+.icon-checkmark {
+  @extend .icon;
+  -webkit-mask-image: url(https://cdn.cerve.com/ui/checkmark--filled.svg);
+  mask-image: url(https://cdn.cerve.com/ui/checkmark--filled.svg);
+  -webkit-mask-size: 16px auto;
+  height: 16px !important;
+  width: 16px !important;
+}
+
+.icon-download {
+  @extend .icon;
+  -webkit-mask-image: url(https://cdn.cerve.com/ui/download.svg);
+  mask-image: url(https://cdn.cerve.com/ui/download.svg);
+  -webkit-mask-size: 20px auto;
+}
+
+.icon-upload {
+  @extend .icon;
+  -webkit-mask-image: url(https://cdn.cerve.com/ui/upload.svg);
+  mask-image: url(https://cdn.cerve.com/ui/upload.svg);
+  -webkit-mask-size: 20px auto;
+}
+
+.icon-block {
+  @extend .icon;
+  -webkit-mask-image: url(https://cdn.cerve.com/ui/error--outline.svg);
+  mask-image: url(https://cdn.cerve.com/ui/error--outline.svg);
+  -webkit-mask-size: 18px auto;
+
+  &--reverse {
+    -webkit-mask-image: url(https://cdn.cerve.com/ui/checkmark--outline.svg);
+    mask-image: url(https://cdn.cerve.com/ui/checkmark--outline.svg);
+  }
+}

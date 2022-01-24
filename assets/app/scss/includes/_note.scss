@@ -1,0 +1,77 @@
+/*!
+ * CERVE PROPRIETARY INFORMATION
+ *
+ * This software is confidential. Cerve, or one of its
+ * subsidiaries, has supplied this software to you under terms of a
+ * license agreement, nondisclosure agreement or both.
+ *
+ * You may not copy, disclose, or use this software except in accordance with
+ * those terms.
+ *
+ * Copyright (c) 2021 Cerve
+ * ALL RIGHTS RESERVED.
+ *
+ * CERVE MAKES NO REPRESENTATIONS OR
+ * WARRANTIES ABOUT THE SUITABILITY OF THE SOFTWARE,
+ * EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+ * TO THE IMPLIED WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE, OR
+ * NON-INFRINGEMENT. CERVE SHALL NOT BE
+ * LIABLE FOR ANY DAMAGES SUFFERED BY LICENSEE
+ * AS A RESULT OF USING, MODIFYING OR DISTRIBUTING
+ * THIS SOFTWARE OR ITS DERIVATIVES.
+ */
+
+.note {
+  &__title {
+    @extend .t-size17;
+  }
+  &__link {
+    @extend .t-grey;
+    @extend .t-size12;
+    @extend .t-lsMinus2;
+  }
+  &__text {
+    @extend .t-size14;
+    @extend .t-break;
+  }
+
+  &__popup {
+    &__title {
+      @extend .t-size24;
+      @extend .t-light;
+    }
+
+    &__textField {
+      @extend .textField;
+      @extend .textField--textarea;
+      @extend .t-size14;
+    }
+
+    &__count {
+      @extend .t-grey;
+      @extend .t-size12;
+      @extend .t-lsMinus2;
+
+      &--frame {
+        @extend .t-size14;
+
+        text-align: left;
+        padding-top: 1.4rem;
+        padding-bottom: 0.9rem;
+        margin-top: -1px;
+        border: 1px solid $text-field-gray;
+        border-bottom-right-radius: 6px;
+        border-bottom-left-radius: 6px;
+      }
+    }
+
+    &__button {
+      @extend .button;
+      @extend .button--icon--height;
+      @extend .button--light;
+      @extend .t-grossisteThemePrimary;
+      @extend .u-fullWidth;
+    }
+  }
+}

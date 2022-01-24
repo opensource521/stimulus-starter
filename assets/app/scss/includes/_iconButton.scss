@@ -1,0 +1,97 @@
+/*!
+ * CERVE PROPRIETARY INFORMATION
+ *
+ * This software is confidential. Cerve, or one of its
+ * subsidiaries, has supplied this software to you under terms of a
+ * license agreement, nondisclosure agreement or both.
+ *
+ * You may not copy, disclose, or use this software except in accordance with
+ * those terms.
+ *
+ * Copyright (c) 2021 Cerve
+ * ALL RIGHTS RESERVED.
+ *
+ * CERVE MAKES NO REPRESENTATIONS OR
+ * WARRANTIES ABOUT THE SUITABILITY OF THE SOFTWARE,
+ * EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+ * TO THE IMPLIED WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE, OR
+ * NON-INFRINGEMENT. CERVE SHALL NOT BE
+ * LIABLE FOR ANY DAMAGES SUFFERED BY LICENSEE
+ * AS A RESULT OF USING, MODIFYING OR DISTRIBUTING
+ * THIS SOFTWARE OR ITS DERIVATIVES.
+ */
+
+.iconButton {
+  width: 5rem;
+  height: 5rem;
+  margin: -1.1rem -1.1rem -1.1rem;
+  border-radius: 100%;
+  position: relative;
+  display: block;
+  cursor: pointer;
+  &::after {
+    content: "";
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 100%;
+    background: rgba($black, 0.16);
+    z-index: 0;
+  }
+  & > * {
+    z-index: 1;
+  }
+  &::after,
+  & > * {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+  }
+  &--light {
+    width: 7rem;
+    height: 4rem;
+    margin: -1.4rem -0.8rem -0.8rem;
+    &:after {
+      background: white;
+      width: 2.4rem;
+      height: 2.4rem;
+      border: 1px solid $ui-gray;
+    }
+  }
+
+  &--reverse {
+    transform: rotate(180deg);
+  }
+
+  &--zero {
+    color: var(--theme-primary);
+    border: 1px solid rgba(127, 134, 144, 0.1);
+    padding: 0 0 0 12px;
+    border-radius: 4px;
+
+    > span {
+      font-size: 12px;
+      margin: 3px 0 0;
+    }
+
+    .button {
+      background: none;
+      color: var(--theme-primary);
+      height: 3rem;
+    }
+  }
+
+  &--out-of-stock {
+    color: $disabled-text-gray;
+    border: 1px solid rgba(127, 134, 144, 0.1);
+    padding: 0 0 0 12px;
+    border-radius: 4px;
+    height: 3rem;
+
+    > span {
+      font-size: 12px;
+      margin: 3px 0 0;
+    }
+  }
+}

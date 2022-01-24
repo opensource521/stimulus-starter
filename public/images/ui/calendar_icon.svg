@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>calendar_icon</title>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="top_bar" transform="translate(-1133.000000, -22.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g id="Group-2">
+                <path d="M1147.54545,22 L1134.45455,22 C1133.65091,22 1133,22.6509091 1133,23.4545455 L1133,36.5454545 C1133,37.3490909 1133.65091,38 1134.45455,38 L1147.54545,38 C1148.34909,38 1149,37.3490909 1149,36.5454545 L1149,23.4545455 C1149,22.6509091 1148.34909,22 1147.54545,22 Z M1147.54545,26.3636364 L1134.45455,26.3636364 L1134.45455,23.4545455 L1147.54545,23.4545455 L1147.54545,26.3636364 Z" id="calendar_icon"></path>
+            </g>
+        </g>
+    </g>
+</svg>

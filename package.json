@@ -1,0 +1,42 @@
+{
+  "name": "stimulus-starter",
+  "version": "1.0.0",
+  "description": "``` $ git clone https://github.com/cerveco/stimulus-starter.git $ cd stimulus-starter $ yarn install $ yarn start ``` ---",
+  "main": "webpack.config.js",
+  "scripts": {
+    "start": "./node_modules/.bin/webpack --mode=development --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cerveco/stimulus-starter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cerveco/stimulus-starter/issues"
+  },
+  "homepage": "https://github.com/cerveco/stimulus-starter#readme",
+  "dependencies": {
+    "@babel/plugin-transform-runtime": "^7.16.8",
+    "@babel/runtime": "^7.16.7",
+    "body-scroll-lock": "^4.0.0-beta.0",
+    "core-js": "^3.20.2",
+    "cssnano": "^5.0.15",
+    "postcss": "^8.4.5",
+    "postcss-loader": "^6.2.1",
+    "query-string": "^7.1.0",
+    "stimulus": "^3.0.1",
+    "whatwg-fetch": "^3.6.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.7",
+    "@babel/preset-env": "^7.16.8",
+    "@babel/register": "^7.16.8",
+    "babel-loader": "^8.2.3",
+    "file-loader": "^6.2.0",
+    "node-sass": "^7.0.1",
+    "sass-loader": "^12.4.0",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1"
+  }
+}

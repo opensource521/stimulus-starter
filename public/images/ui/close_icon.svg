@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="10px" viewBox="0 0 12 10" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>close_icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="close_icon" transform="translate(1.000000, 0.000000)" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="0.6">
+            <path d="M5.55555556,5 L10,9.44444444 L9.44444444,10 L5,5.55555556 L0.555555556,10 L-4.61852778e-14,9.44444444 L4.44444444,5 L-4.61852778e-14,0.555555556 L0.555555556,-1.08801856e-14 L5,4.44444444 L9.44444444,-1.0658141e-14 L10,0.555555556 L5.55555556,5 Z"></path>
+        </g>
+    </g>
+</svg>

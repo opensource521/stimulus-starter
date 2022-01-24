@@ -1,0 +1,66 @@
+/*!
+ * CERVE PROPRIETARY INFORMATION
+ *
+ * This software is confidential. Cerve, or one of its
+ * subsidiaries, has supplied this software to you under terms of a
+ * license agreement, nondisclosure agreement or both.
+ *
+ * You may not copy, disclose, or use this software except in accordance with
+ * those terms.
+ *
+ * Copyright (c) 2021 Cerve
+ * ALL RIGHTS RESERVED.
+ *
+ * CERVE MAKES NO REPRESENTATIONS OR
+ * WARRANTIES ABOUT THE SUITABILITY OF THE SOFTWARE,
+ * EITHER EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+ * TO THE IMPLIED WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE, OR
+ * NON-INFRINGEMENT. CERVE SHALL NOT BE
+ * LIABLE FOR ANY DAMAGES SUFFERED BY LICENSEE
+ * AS A RESULT OF USING, MODIFYING OR DISTRIBUTING
+ * THIS SOFTWARE OR ITS DERIVATIVES.
+ */
+
+// Contains variables for all colors and gradients used in the app.
+
+// Greyscale
+$white: white;
+$black: black;
+$off-white: #fafafa;
+$line-break-gray: #f7f7f7;
+$gray: #f5f5f5;
+$text-field-gray: #f3f4f4;
+$border-gray: #f3f4f4;
+$ui-gray: #ececec;
+$mid-gray: #e9edf0;
+$bg-gray: #eef2f4;
+$spinner-gray: #d8d8d8;
+$image-bg-gray: #dedded;
+$selected-gray: #d7d7e4;
+$disabled-button-gray: #d1d5d9;
+$alt-gray: #9faab1;
+$faded-gray: #c8c8c8;
+$button-gray: #909291;
+$dark-gray: #97a3ac;
+$disabled-text-gray: #9faab1;
+$blue-border: #e5f5f4;
+$strip-grey: #f1f6f7;
+$text-grey: #7f8690;
+$nav-grey: rgba(237, 242, 243, 0.2);
+$border-light: rgba(127, 134, 144, 0.1);
+$border-light-hover: rgba(127, 134, 144, 0.4);
+
+// COLORS
+$red: #c02323;
+$green: #498958;
+$bg-light-green: #EDFCFB;
+$bg-disabled:#e8f2f2;
+$bg: #eaf2f2;
+$primary: #4d7bd5;
+$theme-primary: var(--theme-primary);
+
+// Gradients
+$grad1: linear-gradient(-45deg, #f3eae0, #f8f6f1);
+$theme-gradient: linear-gradient(45deg, var(--theme-secondary), var(--theme-tertiary));
+$map-radial-grad: radial-gradient(rgba(0, 87, 184, 0), rgba(0, 87, 184, 0.3));

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="6px" height="10px" viewBox="0 0 6 10" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>icon / chevron / right / gray</title>
+    <desc>Created with Sketch.</desc>
+    <g id="dashboard-190201" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="d-1-reports" transform="translate(-1221.000000, -25.000000)" fill="#9FAAB1" fill-rule="nonzero">
+            <g id="sub-nav" transform="translate(208.000000, 21.000000)">
+                <g id="datepicker" transform="translate(894.000000, 0.000000)">
+                    <g id="icon-/-chevron-/-right-/-gray" transform="translate(114.000000, 1.000000)">
+                        <path d="M7.77297077,8.7123106 L10.7781746,5.70710678 C11.1686989,5.31658249 11.8018639,5.31658249 12.1923882,5.70710678 L12.5459415,6.06066017 L8.30330086,10.3033009 C8.01040764,10.5961941 7.53553391,10.5961941 7.24264069,10.3033009 L3,6.06066017 L3.35355339,5.70710678 C3.74407768,5.31658249 4.37724266,5.31658249 4.76776695,5.70710678 L7.77297077,8.7123106 Z" id="Path" transform="translate(7.772971, 7.761485) rotate(-90.000000) translate(-7.772971, -7.761485) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

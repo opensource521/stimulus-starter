@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="{{ .lang }}" cacheBuster="{{ .cacheBuster }}">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="robots" content="noindex,nofollow,noarchive" />
+        <meta name="viewport" content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, viewport-fit=cover'/>
+        <meta name="apple-mobile-web-app-capable" content="yes"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+        <title>{{ .company }}</title>
+        <meta name="msapplication-TileColor" content="#ffffff"/>
+        <meta name="theme-color" content="#ffffff"/>
+        <link href="https://unpkg.com/basscss@8.0.2/css/basscss.min.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="/public/app/css/styles.css" type="text/css"/>
+        <script src="/public/app/js/main.js" type="application/javascript"></script>
+    </head>
+    <body>
+        <main id="content">
+            {{ yield }}
+        </main>
+    </body>
+</html>
